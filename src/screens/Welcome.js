@@ -51,7 +51,7 @@ const MottoWrapper = styled.div`
 
 const to = (i) => ({
   x: 0,
-  y: i,
+  y: i == 2 ? 50 : i * 20,
   scale: 1,
   rot: 0,
   opacity: 1,
@@ -59,10 +59,10 @@ const to = (i) => ({
 });
 
 const from = (i) => ({
-  x: i >= 3 ? -1000 : 0,
+  x: 0,
   rot: 0,
   scale: 1.5,
-  opacity: i >= 3 ? 0.1 : 1,
+  opacity: i >= 2 ? 0.1 : 1,
   y: i >= 3 ? 0 : -1000,
 });
 
@@ -155,7 +155,6 @@ export default function Welcome() {
                         >
                           <Text
                             element="h2"
-                            size="bigger"
                             variant="title"
                             textColor="white"
                           >
