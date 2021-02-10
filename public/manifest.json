@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Vacci",
+  "name": "mRNA Vaccine Information Campaign, created by students from NTNU.",
   "icons": [
     {
       "src": "favicon.ico",
