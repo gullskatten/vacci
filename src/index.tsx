@@ -16,10 +16,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    font-family: ${(props) => props.theme.fonts.primary};
-    background-color: ${(props) => props.theme.colors.section.secondary};
+    font-family: ;
+    background-color: ;
   }
 `;
+
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={_default}>

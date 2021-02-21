@@ -1,6 +1,5 @@
 import loadIcons from './utils/faLibLoader';
 import styled from 'styled-components';
-import Routes from './routes/Routes';
 
 
 loadIcons();
@@ -14,7 +13,6 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-       <Routes />
     </AppContainer>
   );
 }

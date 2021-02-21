@@ -1,6 +1,5 @@
 import { keyframes } from 'styled-components';
 
-
 export const fontColorChanger = keyframes`
     0% { color: #4285F4; }
 	25% { color: #DE3E35; }
