@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import App from "./App";
-import _default from "./theme/default";
+import { vacciTheme } from "./theme/default";
 // import reportWebVitals from './reportWebVitals';
 
 const GlobalStyle = createGlobalStyle`
@@ -16,14 +16,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    font-family: ;
-    background-color: ;
+    font-family: ${props => props.theme.fonts.body};
+    background-color: ${props => props.theme.colors.background};
   }
 `;
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={_default}>
+    <ThemeProvider theme={vacciTheme}>
       <GlobalStyle />
       <App />
     </ThemeProvider>
