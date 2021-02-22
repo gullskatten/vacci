@@ -1,4 +1,4 @@
-import { ITheme } from '../../styled';
+import { ITheme } from "../../styled";
 
 const vacciTheme: ITheme = {
   colors: {
@@ -9,16 +9,21 @@ const vacciTheme: ITheme = {
     background: "#FFFFFF",
     surface: "#F8F8F8",
     error: "string",
-    onPrimary: "#FFFFFFF",
-    onSecondary: "#FFFFFFF",
+    onPrimary: "#FFFFFF",
+    onSecondary: "#FFFFFF",
     onBackground: "string",
     onSurface: "string",
-    onError: "string"
+    onError: "string",
   },
   fonts: {
     title: "'Merriweather Sans', sans-serif;",
-    body: "'Merriweather Sans', sans-serif;"
-  }
+    body: "'Merriweather Sans', sans-serif;",
+  },
+  spacing: {
+    s: "0.5rem",
+    m: "1rem",
+    l: "2rem",
+  },
 };
 
 export { vacciTheme };

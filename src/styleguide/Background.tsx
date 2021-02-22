@@ -2,14 +2,15 @@ import { IColors } from "./../../styled.d";
 import styled, { css } from "styled-components";
 
 interface Props {
-  color?: keyof IColors;
+  background?: keyof IColors;
   fullWidth?: boolean;
 }
 
 const Background = styled.div<Props>`
-  color: ${props => props.theme.colors[props.color || "primary"]};
+  background-color: ${(props) =>
+    props.theme.colors[props.background || "primary"]};
 
-  ${props =>
+  ${(props) =>
     props.fullWidth &&
     css`
       width: 100%;

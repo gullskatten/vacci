@@ -8,11 +8,12 @@ interface Props {
 }
 
 const Flex = styled.div<Props>`
-  flex-direction: ${props => (props.direction ? props.direction : "row")};
-  align: ${props => (props.align ? props.align : "flex-start")};
-  justify-content: ${props => (props.justify ? props.justify : "unset")};
+  display: flex;
+  flex-direction: ${(props) => (props.direction ? props.direction : "row")};
+  align-items: ${(props) => (props.align ? props.align : "flex-start")};
+  justify-content: ${(props) => (props.justify ? props.justify : "unset")};
 
-  ${props =>
+  ${(props) =>
     props.fullWidth &&
     css`
       width: 100%;

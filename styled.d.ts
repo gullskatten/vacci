@@ -15,6 +15,12 @@ export interface IColors {
   onError: string;
 }
 
+export interface ISpacing {
+  s: string;
+  m: string;
+  l: string;
+}
+
 interface IFonts {
   title: string;
   body: string;
@@ -23,6 +29,7 @@ interface IFonts {
 export interface ITheme {
   colors: IColors;
   fonts: IFonts;
+  spacing: ISpacing;
 }
 
 declare module "styled-components" {
