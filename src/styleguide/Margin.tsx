@@ -11,7 +11,7 @@ interface Props {
 
 const Margin = styled.div<Props>`
   /* Base margin */
-  margin: ${(props) => props.theme.spacing[props.gutterBase || "m"]};
+  margin: ${(props) => props.theme.spacing[props.gutterBase || "none"]};
 
   ${(props) =>
     props.gutterBottom &&

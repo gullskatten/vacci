@@ -11,9 +11,9 @@ const vacciTheme: ITheme = {
     error: "string",
     onPrimary: "#FFFFFF",
     onSecondary: "#FFFFFF",
-    onBackground: "string",
-    onSurface: "string",
-    onError: "string",
+    onBackground: "#000000",
+    onSurface: "#000000",
+    onError: "#888888",
   },
   fonts: {
     title: "'Merriweather Sans', sans-serif;",
@@ -23,6 +23,7 @@ const vacciTheme: ITheme = {
     s: "0.5rem",
     m: "1rem",
     l: "2rem",
+    none: "0",
   },
 };
 

@@ -11,7 +11,7 @@ interface Props {
 
 const Padding = styled.div<Props>`
   /* Base padding */
-  padding: ${(props) => props.theme.spacing[props.gutterBase || "m"]};
+  padding: ${(props) => props.theme.spacing[props.gutterBase || "none"]};
 
   ${(props) =>
     props.gutterBottom &&

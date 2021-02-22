@@ -19,6 +19,7 @@ export interface ISpacing {
   s: string;
   m: string;
   l: string;
+  none: string;
 }
 
 interface IFonts {
