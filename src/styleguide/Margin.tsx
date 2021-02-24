@@ -2,39 +2,39 @@ import styled, { css } from "styled-components";
 import { ISpacing } from "../../styled";
 
 interface Props {
-  gutterLeft?: keyof ISpacing;
-  gutterRight?: keyof ISpacing;
-  gutterTop?: keyof ISpacing;
-  gutterBottom?: keyof ISpacing;
-  gutterBase?: keyof ISpacing;
+  left?: keyof ISpacing;
+  right?: keyof ISpacing;
+  top?: keyof ISpacing;
+  bottom?: keyof ISpacing;
+  all?: keyof ISpacing;
 }
 
 const Margin = styled.div<Props>`
-  /* Base margin */
-  margin: ${(props) => props.theme.spacing[props.gutterBase || "none"]};
+  /* all margin */
+  margin: ${(props) => props.theme.spacing[props.all || "none"]};
 
   ${(props) =>
-    props.gutterBottom &&
+    props.bottom &&
     css`
-      margin-bottom: ${props.theme.spacing[props.gutterBottom]};
+      margin-bottom: ${props.theme.spacing[props.bottom]};
     `};
 
   ${(props) =>
-    props.gutterTop &&
+    props.top &&
     css`
-      margin-top: ${props.theme.spacing[props.gutterTop]};
+      margin-top: ${props.theme.spacing[props.top]};
     `};
 
   ${(props) =>
-    props.gutterLeft &&
+    props.left &&
     css`
-      margin-left: ${props.theme.spacing[props.gutterLeft]};
+      margin-left: ${props.theme.spacing[props.left]};
     `};
 
   ${(props) =>
-    props.gutterRight &&
+    props.right &&
     css`
-      margin-right: ${props.theme.spacing[props.gutterRight]};
+      margin-right: ${props.theme.spacing[props.right]};
     `};
 `;
 

@@ -1,9 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { IColors } from "../../styled";
 
 interface Props {
   background?: keyof IColors;
+  fullWidth?: boolean;
 }
 
 const Card = styled.div<Props>`
@@ -12,6 +13,12 @@ const Card = styled.div<Props>`
   background-color: ${(props) =>
     props.theme.colors[props.background || "surface"]};
   position: relative;
+
+  ${(props) =>
+    props.fullWidth &&
+    css`
+      width: 100%;
+    `}
 `;
 
 export default Card;

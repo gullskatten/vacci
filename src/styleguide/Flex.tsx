@@ -3,8 +3,13 @@ import styled, { css } from "styled-components";
 interface Props {
   align?: "center" | "flex-start" | "flex-end";
   justify?: "space-between" | "space-around" | "normal";
-  direction?: "column" | "row";
+  direction?: "column" | "row" | "row-reverse" | "column-reverse";
+  gap?: number;
+  flex?: number;
+  basis?: number;
   fullWidth?: boolean;
+  breakAt?: number;
+  wrap?: "wrap" | "wrap-reverse";
 }
 
 const Flex = styled.div<Props>`
@@ -17,6 +22,35 @@ const Flex = styled.div<Props>`
     props.fullWidth &&
     css`
       width: 100%;
+    `}
+
+  ${(props) =>
+    props.flex &&
+    css`
+      flex: ${props.flex};
+    `}
+
+    ${(props) =>
+    props.basis &&
+    css`
+      flex-basis: ${props.basis}%;
+    `}
+    ${(props) =>
+    props.gap &&
+    css`
+      gap: ${props.gap}px;
+    `}
+    ${(props) =>
+    props.wrap &&
+    css`
+      flex-wrap: wrap;
+    `}
+    ${(props) =>
+    props.breakAt &&
+    css`
+      @media all and (max-width: ${props.breakAt}px) {
+        display: block;
+      }
     `}
 `;
 

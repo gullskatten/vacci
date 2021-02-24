@@ -2,39 +2,39 @@ import styled, { css } from "styled-components";
 import { ISpacing } from "../../styled";
 
 interface Props {
-  gutterLeft?: keyof ISpacing;
-  gutterRight?: keyof ISpacing;
-  gutterTop?: keyof ISpacing;
-  gutterBottom?: keyof ISpacing;
-  gutterBase?: keyof ISpacing;
+  left?: keyof ISpacing;
+  right?: keyof ISpacing;
+  top?: keyof ISpacing;
+  bottom?: keyof ISpacing;
+  all?: keyof ISpacing;
 }
 
 const Padding = styled.div<Props>`
   /* Base padding */
-  padding: ${(props) => props.theme.spacing[props.gutterBase || "none"]};
+  padding: ${(props) => props.theme.spacing[props.all || "none"]};
 
   ${(props) =>
-    props.gutterBottom &&
+    props.bottom &&
     css`
-      padding-bottom: ${props.theme.spacing[props.gutterBottom]};
+      padding-bottom: ${props.theme.spacing[props.bottom]};
     `};
 
   ${(props) =>
-    props.gutterTop &&
+    props.top &&
     css`
-      padding-top: ${props.theme.spacing[props.gutterTop]};
+      padding-top: ${props.theme.spacing[props.top]};
     `};
 
   ${(props) =>
-    props.gutterLeft &&
+    props.left &&
     css`
-      padding-left: ${props.theme.spacing[props.gutterLeft]};
+      padding-left: ${props.theme.spacing[props.left]};
     `};
 
   ${(props) =>
-    props.gutterRight &&
+    props.right &&
     css`
-      padding-right: ${props.theme.spacing[props.gutterRight]};
+      padding-right: ${props.theme.spacing[props.right]};
     `};
 `;
 

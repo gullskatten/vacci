@@ -11,7 +11,7 @@ const Nav: React.FC = () => {
   return (
     <Flex align="center" fullWidth>
       <Background background={"primary"} fullWidth>
-        <Padding>
+        <Padding all="m">
           <StyledLink href="/" fontStyle="normal" textDecoration="unset">
             <Text variant="title" element="h1">
               <Text element="span" gutterRight="s" variant="title">

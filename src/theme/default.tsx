@@ -2,8 +2,8 @@ import { ITheme } from "../../styled";
 
 const vacciTheme: ITheme = {
   colors: {
-    primary: "#273043",
-    primaryVariant: "#35415A",
+    primary: "#6381c1",
+    primaryVariant: "#546ea5",
     secondary: "#9197AE",
     secondaryVariant: "#8A90A8",
     background: "#FFFFFF",
@@ -11,8 +11,8 @@ const vacciTheme: ITheme = {
     error: "string",
     onPrimary: "#FFFFFF",
     onSecondary: "#FFFFFF",
-    onBackground: "#000000",
-    onSurface: "#000000",
+    onBackground: "#35466a",
+    onSurface: "#6381c1",
     onError: "#888888",
   },
   fonts: {
