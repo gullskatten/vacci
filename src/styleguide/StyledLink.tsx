@@ -11,6 +11,10 @@ const StyledLink = styled.a<Props>`
   text-decoration: ${(props) =>
     props.textDecoration ? props.textDecoration : "underline"};
   color: inherit;
+
+  &:link {
+    color: inherit;
+  }
 `;
 
 export default StyledLink;

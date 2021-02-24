@@ -7,6 +7,7 @@ interface Props {
   top?: keyof ISpacing;
   bottom?: keyof ISpacing;
   all?: keyof ISpacing;
+  fullWidth?: boolean;
 }
 
 const Margin = styled.div<Props>`
@@ -36,6 +37,11 @@ const Margin = styled.div<Props>`
     css`
       margin-right: ${props.theme.spacing[props.right]};
     `};
+  ${(props) =>
+    props.fullWidth &&
+    css`
+      width: 100%;
+    `}
 `;
 
 export default Margin;

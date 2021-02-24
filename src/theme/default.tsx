@@ -2,17 +2,17 @@ import { ITheme } from "../../styled";
 
 const vacciTheme: ITheme = {
   colors: {
-    primary: "#6381c1",
-    primaryVariant: "#546ea5",
-    secondary: "#9197AE",
-    secondaryVariant: "#8A90A8",
-    background: "#FFFFFF",
-    surface: "#F8F8F8",
+    primary: "#C1292E",
+    primaryVariant: "#F1D302",
+    secondary: "#235789",
+    secondaryVariant: "#161925",
+    background: "#161925",
+    surface: "#F1D302",
     error: "string",
     onPrimary: "#FFFFFF",
     onSecondary: "#FFFFFF",
-    onBackground: "#35466a",
-    onSurface: "#6381c1",
+    onBackground: "#FFFFFF",
+    onSurface: "#161925",
     onError: "#888888",
   },
   fonts: {

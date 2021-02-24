@@ -7,6 +7,7 @@ interface Props {
   top?: keyof ISpacing;
   bottom?: keyof ISpacing;
   all?: keyof ISpacing;
+  fullWidth?: boolean;
 }
 
 const Padding = styled.div<Props>`
@@ -36,6 +37,12 @@ const Padding = styled.div<Props>`
     css`
       padding-right: ${props.theme.spacing[props.right]};
     `};
+
+  ${(props) =>
+    props.fullWidth &&
+    css`
+      width: 100%;
+    `}
 `;
 
 export default Padding;
