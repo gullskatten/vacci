@@ -28,7 +28,7 @@ const StoryWireframe = styled.div<Props>`
 const Story: React.FC = () => {
   return (
     <Padding right="m" fullWidth>
-      <Flex gap={10} fullWidth>
+      <Flex gap={10} fullWidth breakAt={500}>
         <Flex direction="column" flex={1}>
           <StoryWireframe src={story}></StoryWireframe>
           <Margin top="m">
@@ -44,7 +44,7 @@ const Story: React.FC = () => {
               <StyledLink href="/">Corona Virus</StyledLink>
             </Text>
           </Margin>
-          <Text gutterTop="s">
+          <Text gutterTop="s" gutterBottom="m">
             We look into the details of the corona virus and how it works.
           </Text>
         </Flex>
@@ -63,7 +63,7 @@ const Story: React.FC = () => {
               <StyledLink href="/">Corona Vaccine</StyledLink>
             </Text>
           </Margin>
-          <Text gutterTop="s">
+          <Text gutterTop="s" gutterBottom="m">
             We explain the mRNA vaccine and its effect on the human body.
           </Text>
         </Flex>
