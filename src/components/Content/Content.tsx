@@ -22,9 +22,9 @@ const Content: React.FC = () => {
         <Margin left="s" fullWidth>
           <Flex fullWidth direction="column">
             <Text variant="title" element="h2" color="onBackground">
-              A brief introduction to mRNA
+              A brief introduction to mRNA Vaccines
             </Text>
-            <Text gutterTop="s" gutterBottom="s">
+            <Text gutterTop="s" gutterBottom="s" color="onBackground">
               These animations explains the concepts of both the mRNA vaccine
               and the Corona virus.
             </Text>
@@ -42,7 +42,12 @@ const Content: React.FC = () => {
             >
               On the street interviews
             </Text>
-            <Text variant="subtitle" element="h3" color="surface" gutterTop="s">
+            <Text
+              variant="subtitle"
+              element="h3"
+              color="onBackgroundContrast"
+              gutterTop="s"
+            >
               Will you be taking the mRNA vaccine?
             </Text>
           </Flex>
@@ -125,12 +130,12 @@ const Content: React.FC = () => {
       </Flex>
 
       <Flex flex={1} direction="column" justify="space-between" gap={10}>
-        <Card background="surface" fullWidth>
+        <Card background="primary" fullWidth>
           <Padding all="m">
-            <Text variant="subtitle" element="h2" color="onSurface">
+            <Text variant="subtitle" element="h2" color="onPrimary">
               About mRNA vaccines
             </Text>
-            <Text gutterTop="m" color="onSurface">
+            <Text gutterTop="m" color="onPrimary">
               mRNA vaccines are a new type of vaccine to protect against
               infectious diseases. To trigger an immune response, many vaccines
               put a weakened or inactivated germ into our bodies. Not mRNA
@@ -142,99 +147,21 @@ const Content: React.FC = () => {
             </Text>
             <Margin top="s">
               <Text variant="pico" element="span">
-                <Text variant="pico" element="span" color="onSurface">
+                <Text variant="pico" element="span" color="onPrimary">
                   Source{" "}
                 </Text>
                 <StyledLink
-                  color="onSurface"
+                  color="onPrimary"
                   href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html"
                 >
                   <Text
-                    color="onSurface"
+                    color="onPrimary"
                     gutterLeft="s"
                     variant="pico"
                     element="span"
                     bold
                   >
                     CDC.gov
-                  </Text>
-                </StyledLink>
-              </Text>
-            </Margin>
-          </Padding>
-        </Card>
-
-        <Card background="surface" fullWidth>
-          <Padding all="m">
-            <Text variant="subtitle" element="h2" color="onSurface">
-              mRNA vaccine facts
-            </Text>
-            <Text gutterTop="m" bold color="onSurface">
-              They cannot give someone COVID-19.
-            </Text>
-            <List>
-              <ListItem>
-                <Text color="onSurface">
-                  mRNA vaccines do not use the live virus that causes COVID-19.
-                </Text>
-              </ListItem>
-            </List>
-            <Text gutterTop="m" bold color="onSurface">
-              They do not affect or interact with our DNA in any way.
-            </Text>
-            <List>
-              <ListItem>
-                <Text color="onSurface">
-                  mRNA never enters the nucleus of the cell, which is where our
-                  DNA (genetic material) is kept.
-                </Text>
-              </ListItem>
-              <ListItem>
-                <Text color="onSurface">
-                  The cell breaks down and gets rid of the mRNA soon after it is
-                  finished using the instructions.
-                </Text>
-              </ListItem>
-            </List>
-
-            <Margin top="s">
-              <Text variant="pico" element="span">
-                <Text variant="pico" element="span" color="onSurface">
-                  Source{" "}
-                </Text>
-                <StyledLink href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html">
-                  <Text
-                    gutterLeft="s"
-                    variant="pico"
-                    element="span"
-                    color="onSurface"
-                    bold
-                  >
-                    CDC.gov
-                  </Text>
-                </StyledLink>
-              </Text>
-            </Margin>
-          </Padding>
-        </Card>
-
-        <Card background="surface" fullWidth>
-          <Padding all="m">
-            <Text variant="subtitle" element="h2" color="onSurface">
-              Why are some sceptic?
-            </Text>
-            <Text gutterTop="m" color="onSurface">
-              Do we have a reason to be sceptic? Is this something that lies in
-              our nature?
-            </Text>
-            <Margin top="s">
-              <Text variant="pico" element="span">
-                <StyledLink
-                  href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html"
-                  color="onSurface"
-                >
-                  <Text variant="pico" element="span" bold color="onSurface">
-                    Read more
                   </Text>
                 </StyledLink>
               </Text>
@@ -244,17 +171,100 @@ const Content: React.FC = () => {
 
         <Card background="primary" fullWidth>
           <Padding all="m">
-            <Text variant="subtitle" element="h2">
-              Will you take the vaccine?
+            <Text variant="subtitle" element="h2" color="onPrimary">
+              mRNA vaccine facts
             </Text>
-            <Text gutterTop="m">Join in on the anonymous poll!</Text>
+            <Text gutterTop="m" bold color="onPrimary">
+              They cannot give someone COVID-19.
+            </Text>
+            <List>
+              <ListItem>
+                <Text color="onPrimary">
+                  mRNA vaccines do not use the live virus that causes COVID-19.
+                </Text>
+              </ListItem>
+            </List>
+            <Text gutterTop="m" bold color="onPrimary">
+              They do not affect or interact with our DNA in any way.
+            </Text>
+            <List>
+              <ListItem>
+                <Text color="onPrimary">
+                  mRNA never enters the nucleus of the cell, which is where our
+                  DNA (genetic material) is kept.
+                </Text>
+              </ListItem>
+              <ListItem>
+                <Text color="onPrimary">
+                  The cell breaks down and gets rid of the mRNA soon after it is
+                  finished using the instructions.
+                </Text>
+              </ListItem>
+            </List>
+
             <Margin top="s">
               <Text variant="pico" element="span">
+                <Text variant="pico" element="span" color="onPrimary">
+                  Source{" "}
+                </Text>
+                <StyledLink
+                  color="onPrimary"
+                  href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html"
+                >
+                  <Text
+                    gutterLeft="s"
+                    variant="pico"
+                    element="span"
+                    color="onPrimary"
+                    bold
+                  >
+                    CDC.gov
+                  </Text>
+                </StyledLink>
+              </Text>
+            </Margin>
+          </Padding>
+        </Card>
+
+        <Card background="secondary" fullWidth>
+          <Padding all="m">
+            <Text variant="subtitle" element="h2" color="onSecondary">
+              Why are some sceptic?
+            </Text>
+            <Text gutterTop="m" color="onSecondary">
+              Do we have a reason to be sceptic? Is this something that lies in
+              our nature?
+            </Text>
+            <Margin top="s">
+              <Text variant="pico" element="span" color="onSecondary">
                 <StyledLink
                   href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html"
-                  color="onSurface"
+                  color="onSecondary"
                 >
-                  <Text variant="pico" element="span" bold>
+                  <Text variant="pico" element="span" bold color="onSecondary">
+                    Read more
+                  </Text>
+                </StyledLink>
+              </Text>
+            </Margin>
+          </Padding>
+        </Card>
+
+        <Card background="tertiary" fullWidth>
+          <Padding all="m">
+            <Text variant="subtitle" element="h2" color="onTertiary">
+              Will you take the vaccine?
+            </Text>
+            <Text gutterTop="m" color="onTertiary">
+              Join in on the anonymous poll!
+            </Text>
+            <Margin top="s">
+              <Text variant="pico" element="span" color="onTertiary">
+                <StyledLink
+                  href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/mrna.html"
+                  color="onTertiary"
+                >
+                  <Text variant="pico" element="span" color="onTertiary" bold>
                     See results
                   </Text>
                 </StyledLink>

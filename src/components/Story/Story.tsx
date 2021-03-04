@@ -36,15 +36,17 @@ const Story: React.FC = () => {
               <Text
                 variant="subtitle"
                 element="span"
-                color="primaryVariant"
+                color="onBackgroundContrast"
                 gutterRight="m"
               >
                 Part 1:
               </Text>
-              <StyledLink href="/">Corona Virus</StyledLink>
+              <StyledLink href="/" color="onBackground">
+                Corona Virus
+              </StyledLink>
             </Text>
           </Margin>
-          <Text gutterTop="s" gutterBottom="m">
+          <Text gutterTop="s" gutterBottom="m" color="onBackground">
             We look into the details of the corona virus and how it works.
           </Text>
         </Flex>
@@ -55,15 +57,17 @@ const Story: React.FC = () => {
               <Text
                 variant="subtitle"
                 element="span"
-                color="primaryVariant"
+                color="onBackgroundContrast"
                 gutterRight="m"
               >
                 Part 2:
               </Text>
-              <StyledLink href="/">Corona Vaccine</StyledLink>
+              <StyledLink href="/" color="onBackground">
+                Corona Vaccine
+              </StyledLink>
             </Text>
           </Margin>
-          <Text gutterTop="s" gutterBottom="m">
+          <Text gutterTop="s" gutterBottom="m" color="onBackground">
             We explain the mRNA vaccine and its effect on the human body.
           </Text>
         </Flex>

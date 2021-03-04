@@ -5,7 +5,7 @@ import React from "react";
 interface Props {
   color?: keyof IColors;
   variant?: "title" | "subtitle" | "body" | "pico";
-  element?: "span" | "p" | "h1" | "h2" | "h3";
+  element?: "span" | "p" | "h1" | "h2" | "h3" | "label";
   gutterLeft?: keyof ISpacing;
   gutterRight?: keyof ISpacing;
   gutterTop?: keyof ISpacing;
@@ -13,6 +13,7 @@ interface Props {
   gutterBase?: keyof ISpacing;
   italic?: boolean;
   bold?: boolean;
+  htmlFor?: string;
 }
 
 const TextStyles = styled.div<Props>`

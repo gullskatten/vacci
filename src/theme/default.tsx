@@ -3,17 +3,16 @@ import { ITheme } from "../../styled";
 const vacciTheme: ITheme = {
   colors: {
     primary: "#C1292E",
-    primaryVariant: "#F1D302",
     secondary: "#235789",
-    secondaryVariant: "#161925",
+    tertiary: "#F1D302",
     background: "#161925",
-    surface: "#F1D302",
-    error: "string",
+    error: "#C1292E",
     onPrimary: "#FFFFFF",
     onSecondary: "#FFFFFF",
     onBackground: "#FFFFFF",
-    onSurface: "#161925",
-    onError: "#888888",
+    onBackgroundContrast: "#F1D302",
+    onTertiary: "#161925",
+    onError: "#FFFFFF",
   },
   fonts: {
     title: "'Merriweather Sans', sans-serif;",

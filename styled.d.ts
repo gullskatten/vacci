@@ -2,16 +2,15 @@ import "styled-components";
 
 export interface IColors {
   primary: string;
-  primaryVariant: string;
   secondary: string;
-  secondaryVariant: string;
+  tertiary: string;
   background: string;
-  surface: string;
   error: string;
   onPrimary: string;
   onSecondary: string;
+  onTertiary: string;
   onBackground: string;
-  onSurface: string;
+  onBackgroundContrast: string;
   onError: string;
 }
 

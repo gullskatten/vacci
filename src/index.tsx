@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import App from "./App";
-import { vacciTheme } from "./theme/default";
-// import reportWebVitals from './reportWebVitals';
+import { ThemeWrapperContextProvider } from "./context/ThemeWrapperContext";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -16,17 +15,17 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    font-family: ${props => props.theme.fonts.body};
-    background-color: ${props => props.theme.colors.background};
+    font-family: ${(props) => props.theme.fonts.body};
+    background-color: ${(props) => props.theme.colors.background};
   }
 `;
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={vacciTheme}>
+    <ThemeWrapperContextProvider>
       <GlobalStyle />
       <App />
-    </ThemeProvider>
+    </ThemeWrapperContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
