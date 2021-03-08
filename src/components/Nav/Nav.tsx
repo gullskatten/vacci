@@ -28,23 +28,6 @@ const Nav: React.FC = () => {
                 Vacci
               </Text>
             </StyledLink>
-            <Flex gap={10}>
-              <Text bold color="onBackground">
-                <StyledLink href="" color="onBackground">
-                  Reading list
-                </StyledLink>
-              </Text>
-              <Text bold color="onBackground">
-                <StyledLink href="" color="onBackground">
-                  Understanding mRNA
-                </StyledLink>
-              </Text>
-              <Text bold color="onBackground">
-                <StyledLink href="" color="onBackground">
-                  Privacy policy
-                </StyledLink>
-              </Text>
-            </Flex>
           </Flex>
         </Padding>
       </Background>
