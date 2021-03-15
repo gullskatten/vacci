@@ -20,8 +20,8 @@ const MaxWidth = styled(Background)`
 const Content: React.FC = () => {
   return (
     <Flex fullWidth direction="column" align="center">
-      <MaxWidth background="surface">
-        <Margin top="m">
+      <Margin top="m" bottom="m">
+        <MaxWidth background="surface">
           <Padding all="m">
             <Flex direction="column" gap={10}>
               <Margin bottom="m">
@@ -78,8 +78,8 @@ const Content: React.FC = () => {
               </Margin>
             </Flex>
           </Padding>
-        </Margin>
-      </MaxWidth>
+        </MaxWidth>
+      </Margin>
     </Flex>
   );
 };

@@ -6,9 +6,7 @@ import Divider from "../../styleguide/Divider";
 import Padding from "../../styleguide/Padding";
 import Text from "../../styleguide/Text";
 
-const BottomPositioned = styled.div`
-  position: absolute;
-  bottom: 0;
+const BottomPositioned = styled.footer`
   width: 100%;
 `;
 
@@ -24,7 +22,11 @@ const Disclaimer: React.FC = () => {
             <Divider color="secondary" />
             <Text color="onPrimary">
               Vacci, or "Vaccinformation" is a website made by a group of
-              NTNU-students in the course EIT.
+              NTNU-students in the course{" "}
+              <Text color="onPrimary" italic element="span">
+                MFEL4851 Experts in Team - The Personal Genome
+              </Text>
+              .
             </Text>
           </Padding>
         </Background>

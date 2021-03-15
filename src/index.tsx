@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-family: ${(props) => props.theme.fonts.body};
     background-color: ${(props) => props.theme.colors.background};
+    min-height: 100vh;
   }
 `;
 
