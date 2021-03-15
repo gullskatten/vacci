@@ -28,7 +28,7 @@ const StoryWireframe = styled.div<Props>`
 const Story: React.FC = () => {
   return (
     <Padding right="m" fullWidth>
-      <Flex gap={10} fullWidth breakAt={500}>
+      <Flex gap={10} fullWidth breakAt={700}>
         <Flex direction="column" flex={1}>
           <StoryWireframe src={story}></StoryWireframe>
           <Margin top="m">

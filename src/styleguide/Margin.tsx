@@ -10,6 +10,8 @@ interface Props {
   fullWidth?: boolean;
 }
 
+// <---(content)---> "skyver ting vekk" (avstand til andre komponenter)
+
 const Margin = styled.div<Props>`
   /* all margin */
   margin: ${(props) => props.theme.spacing[props.all || "none"]};

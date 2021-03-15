@@ -10,6 +10,8 @@ interface Props {
   fullWidth?: boolean;
 }
 
+// (<---   content   --->) "blåser opp"
+
 const Padding = styled.div<Props>`
   /* Base padding */
   padding: ${(props) => props.theme.spacing[props.all || "none"]};

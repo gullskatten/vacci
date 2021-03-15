@@ -5,6 +5,7 @@ export interface IColors {
   secondary: string;
   tertiary: string;
   background: string;
+  surface: string;
   error: string;
   onPrimary: string;
   onSecondary: string;

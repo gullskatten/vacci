@@ -2,20 +2,21 @@ import { ITheme } from "../../styled";
 
 const vacciTheme: ITheme = {
   colors: {
-    primary: "#C1292E",
-    secondary: "#235789",
-    tertiary: "#F1D302",
-    background: "#161925",
+    primary: "#065A82",
+    secondary: "#1C7293",
+    tertiary: "#065A82",
+    background: "#ececec",
+    surface: "#F9F9F9",
     error: "#C1292E",
-    onPrimary: "#FFFFFF",
-    onSecondary: "#FFFFFF",
-    onBackground: "#FFFFFF",
-    onBackgroundContrast: "#F1D302",
-    onTertiary: "#161925",
+    onPrimary: "#FDFFFC",
+    onSecondary: "#FDFFFC",
+    onBackground: "#033045",
+    onBackgroundContrast: "#777777",
+    onTertiary: "#FDFFFC",
     onError: "#FFFFFF",
   },
   fonts: {
-    title: "'Merriweather Sans', sans-serif;",
+    title: "'Merriweather', sans-serif;",
     body: "'Merriweather Sans', sans-serif;",
   },
   spacing: {

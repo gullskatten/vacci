@@ -1,23 +1,36 @@
 import loadIcons from "./utils/faLibLoader";
-import styled from "styled-components";
 import Nav from "./components/Nav/Nav";
 import React from "react";
 import Content from "./components/Content/Content";
-import Margin from "./styleguide/Margin";
+import Disclaimer from "./components/Disclaimer/Disclaimer";
 import ColorPickerNavAction from "./components/ColorPicker/ColorPickerNavAction";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Scepticism from "./components/Page/Scepticism";
 
 loadIcons();
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <Nav />
-      <Margin all="s">
-        <Content />
-        <ColorPickerNavAction />
-      </Margin>
-    </div>
+    <Router>
+      <Route path="/" component={Nav} />
+      <Route path="/" component={ColorPickerNavAction} />
+      <Route path="/" exact component={Content} />
+      <Route path="/" component={Disclaimer} />
+      <Route
+        path="/scepticism"
+        exact
+        render={function () {
+          return (
+            <Scepticism
+              title="Hvorfor er noen skeptiske?"
+              body="En lang, lang tekst."
+              words={100}
+            />
+          );
+        }}
+      />
+    </Router>
   );
-}
+};
 
 export default App;
