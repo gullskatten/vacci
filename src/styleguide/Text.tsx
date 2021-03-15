@@ -26,6 +26,10 @@ const TextStyles = styled.div<Props>`
       font-family: ${props.theme.fonts.title};
       font-size: 2rem;
       font-weight: bold;
+
+      @media all and (max-width: 900px) {
+        font-size: 1.7rem;
+      }
     `};
   ${(props) =>
     props.variant == "subtitle" &&
@@ -33,6 +37,10 @@ const TextStyles = styled.div<Props>`
       font-family: ${props.theme.fonts.title};
       font-size: 1.5rem;
       font-weight: bold;
+
+      @media all and (max-width: 900px) {
+        font-size: 1.3rem;
+      }
     `};
   ${(props) =>
     props.variant == "body" &&
@@ -40,6 +48,10 @@ const TextStyles = styled.div<Props>`
       font-family: ${props.theme.fonts.body};
       font-size: 1rem;
       font-weight: normal;
+
+      @media all and (max-width: 900px) {
+        font-size: 0.9rem;
+      }
     `};
 
   ${(props) =>
@@ -48,6 +60,10 @@ const TextStyles = styled.div<Props>`
       font-family: ${props.theme.fonts.body};
       font-size: 0.8rem;
       font-weight: normal;
+
+      @media all and (max-width: 900px) {
+        font-size: 0.7rem;
+      }
     `};
   ${(props) =>
     props.gutterBottom &&

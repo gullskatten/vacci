@@ -16,19 +16,6 @@ const App: React.FC = () => {
       <Route path="/" component={ColorPickerNavAction} />
       <Route path="/" exact component={Content} />
       <Route path="/" component={Disclaimer} />
-      <Route
-        path="/scepticism"
-        exact
-        render={function () {
-          return (
-            <Scepticism
-              title="Hvorfor er noen skeptiske?"
-              body="En lang, lang tekst."
-              words={100}
-            />
-          );
-        }}
-      />
     </Router>
   );
 };

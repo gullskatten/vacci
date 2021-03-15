@@ -20,7 +20,7 @@ const Nav: React.FC = () => {
   return (
     <NavWrapper>
       <Flex align="center" fullWidth>
-        <Background background={"background"} fullWidth>
+        <Background background={"surface"} fullWidth>
           <Padding all="m">
             <Flex justify="space-between" align="center">
               <StyledLink href="/" fontStyle="normal" textDecoration="unset">
@@ -29,16 +29,27 @@ const Nav: React.FC = () => {
                     element="span"
                     gutterRight="s"
                     variant="title"
-                    color="onBackground"
+                    color="secondary"
                   >
                     <FontAwesomeIcon icon="virus" />
                   </Text>{" "}
                   Vacci
                 </Text>
               </StyledLink>
-              <StyledLink href="/">
-                <Text variant="body" element="span" color="onBackground">
-                  Reading list
+              <StyledLink href="/" color="onBackgroundContrast">
+                <Text
+                  variant="body"
+                  element="span"
+                  color="onBackgroundContrast"
+                >
+                  <Text
+                    element="span"
+                    gutterRight="s"
+                    color="onBackgroundContrast"
+                  >
+                    <FontAwesomeIcon icon={["far", "map"]} />
+                  </Text>{" "}
+                  Suggested reading
                 </Text>
               </StyledLink>
             </Flex>
