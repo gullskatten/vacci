@@ -91,7 +91,7 @@ const Home: React.FC = () => {
           <Flex direction="column" gap={10}>
             <Margin top="m" bottom="m">
               <Text variant="title" element="h2" color="onBackground">
-                Learn it simple
+                Learn about
               </Text>
               <Text
                 variant="body"
