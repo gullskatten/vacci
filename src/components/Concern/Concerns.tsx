@@ -7,8 +7,8 @@ import Text from "../../styleguide/Text";
 import MainMatter from "../Content/MainMatter";
 import srcOldPerson from "../../assets/images/4_old_person.png";
 import srcMildFeverPerson from "../../assets/images/2_person_with_mild_fever.png";
+import srcScepticalPerson from "../../assets/images/1_sceptical_person_cropped.png";
 import Margin from "../../styleguide/Margin";
-import { List } from "../../styleguide/List";
 import StyledLink from "../../styleguide/StyledLink";
 
 const Concerns: React.FC = () => {
@@ -20,35 +20,45 @@ const Concerns: React.FC = () => {
             Vaccine concerns
           </Text>
           <Text variant="subtitle" element="h2" color="onBackgroundContrast">
-            Do you have concerns about the Covid-19 vaccine?
-          </Text>
-          <Text color="onSurface" gutterTop="m">
-            Having concerns about unknown and unfamiliar things is part of human
-            nature. So if you do have concerns about the Covis-19 vaccine, you
-            are propably a human.
+            Are you concerned about the Covid-19 vaccine?
           </Text>
 
-          <Text color="onSurface" gutterTop="m">
-            However, I am guessing you would agree, that when it comes to making
-            decisions important both for your own, as well as the public health,
-            you should not base your decision on whether something is unfamiliar
-            or not. Rather, you should educate yourself, and become familiar
-            with it.
-          </Text>
+          <Flex>
+            <Flex basis={70} direction="column">
+              <Text color="onSurface" gutterTop="m">
+                Having concerns about unknown and unfamiliar things is part of
+                human nature. So if you do have concerns about the Covid-19
+                vaccine, you are propably a human.
+              </Text>
 
-          <Text color="onSurface" gutterTop="m">
-            Luckily, that is what we are here to help you with! We will try look
-            at the concerns you might have, and try to give you the most
-            relevant and accurate information out there - as well as letting you
-            know where information might be lacking.
-          </Text>
-          <Text color="onSurface" gutterTop="m">
-            We will not tell you whether or not you, in the end, should be
-            concerned about taking the vaccine. We can only hope that after this
-            presentation your attitude towards the vaccines is more informed,
-            and that this information will guide your final decisions in vaccine
-            taking.
-          </Text>
+              <Text color="onSurface" gutterTop="m">
+                However, I am guessing you would agree, that when it comes to
+                making decisions important both for your own, as well as the
+                public health, you should not base your decision on whether
+                something is unfamiliar or not. Rather, you should educate
+                yourself, and become familiar with it.
+              </Text>
+
+              <Text color="onSurface" gutterTop="m">
+                Luckily, that is what we are here to help you with! We will try
+                look at the concerns you might have, and try to give you the
+                most relevant and accurate information out there - as well as
+                letting you know where information might be lacking.
+              </Text>
+              <Text color="onSurface" gutterTop="m">
+                We will not tell you whether or not you, in the end, should be
+                concerned about taking the vaccine. We can only hope that after
+                this presentation your attitude towards the vaccines is more
+                informed, and that this information will guide your final
+                decisions in vaccine taking.
+              </Text>
+            </Flex>
+            <Flex basis={30}>
+              <Flex align="center" justify="center" fullWidth>
+                <StyledImage src={srcScepticalPerson} height={250} />
+              </Flex>
+            </Flex>
+          </Flex>
         </Padding>
         <BackdropBackground background="secondary" />
         <Padding left="l" right="l" fullWidth>
