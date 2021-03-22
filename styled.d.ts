@@ -12,6 +12,7 @@ export interface IColors {
   onTertiary: string;
   onBackground: string;
   onBackgroundContrast: string;
+  onSurface: string;
   onError: string;
 }
 

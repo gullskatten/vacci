@@ -36,22 +36,6 @@ const Nav: React.FC = () => {
                   Vacci
                 </Text>
               </StyledLink>
-              <StyledLink href="/" color="onBackgroundContrast">
-                <Text
-                  variant="body"
-                  element="span"
-                  color="onBackgroundContrast"
-                >
-                  <Text
-                    element="span"
-                    gutterRight="s"
-                    color="onBackgroundContrast"
-                  >
-                    <FontAwesomeIcon icon={["far", "map"]} />
-                  </Text>{" "}
-                  Suggested reading
-                </Text>
-              </StyledLink>
             </Flex>
           </Padding>
         </Background>

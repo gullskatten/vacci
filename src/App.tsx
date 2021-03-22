@@ -1,11 +1,11 @@
 import loadIcons from "./utils/faLibLoader";
 import Nav from "./components/Nav/Nav";
 import React from "react";
-import Content from "./components/Content/Content";
-import Disclaimer from "./components/Disclaimer/Disclaimer";
+import Footer from "./components/Footer/Footer";
 import ColorPickerNavAction from "./components/ColorPicker/ColorPickerNavAction";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Scepticism from "./components/Page/Scepticism";
+import Home from "./components/Home/Home";
+import Concerns from "./components/Concern/Concerns";
 
 loadIcons();
 
@@ -14,8 +14,9 @@ const App: React.FC = () => {
     <Router>
       <Route path="/" component={Nav} />
       <Route path="/" component={ColorPickerNavAction} />
-      <Route path="/" exact component={Content} />
-      <Route path="/" component={Disclaimer} />
+      <Route path="/concerns" component={Concerns} />
+      <Route path="/" exact component={Home} />
+      <Route path="/" component={Footer} />
     </Router>
   );
 };

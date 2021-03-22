@@ -12,6 +12,7 @@ const vacciTheme: ITheme = {
     onSecondary: "#FDFFFC",
     onBackground: "#033045",
     onBackgroundContrast: "#777777",
+    onSurface: "#033045",
     onTertiary: "#FDFFFC",
     onError: "#FFFFFF",
   },

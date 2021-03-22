@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 interface Props {
   align?: "center" | "flex-start" | "flex-end";
-  justify?: "space-between" | "space-around" | "normal";
+  justify?: "space-between" | "space-around" | "normal" | "center";
   direction?: "column" | "row" | "row-reverse" | "column-reverse";
   gap?: number;
   flex?: number;
@@ -27,7 +27,7 @@ const Flex = styled.div<Props>`
   ${(props) =>
     props.flex &&
     css`
-      flex: ${props.flex};
+      flex: ${props.flex}%;
     `}
 
     ${(props) =>

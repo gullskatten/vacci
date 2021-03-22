@@ -3,13 +3,15 @@ import { IColors } from "../../styled";
 
 interface Props {
   color?: keyof IColors;
+  fullWidth?: boolean;
+  lineWidth?: number;
 }
 
 const Divider = styled.div<Props>`
   margin-bottom: 10px;
   padding-top: 10px;
-  width: 200px;
-  border-bottom: 5px solid
+  width: ${(props) => (props.fullWidth ? "100%" : "250px")};
+  border-bottom: ${(props) => (props.lineWidth ? props.lineWidth : 5)}px solid
     ${(props) => props.theme.colors[props.color || "primary"]};
 `;
 

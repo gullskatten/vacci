@@ -4,10 +4,26 @@ import {
   faVirus,
   faPalette,
   faTimes,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { faMap } from "@fortawesome/free-regular-svg-icons";
+import {
+  faMap,
+  faChartBar,
+  faFrownOpen,
+  faLightbulb,
+} from "@fortawesome/free-regular-svg-icons";
 
 export default function loadIcons() {
-  library.add(faVirus, faCoffee, faPalette, faTimes, faMap);
+  library.add(
+    faVirus,
+    faCoffee,
+    faPalette,
+    faTimes,
+    faMap,
+    faChartBar,
+    faFrownOpen,
+    faArrowRight,
+    faLightbulb
+  );
 }
