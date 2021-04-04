@@ -12,8 +12,12 @@ import QuickMrnaInfoList from "./QuickMrnaInfoList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GlossaryInfoList from "./GlossaryInfoList";
 import { useLocation } from "react-router";
-import StyledImage from "../../styleguide/StyledImage";
 import aboutImage from "../../assets/images/about-covid-front.jpg";
+import {
+  BackgroundImage,
+  BackgroundImageContainer,
+} from "../../styleguide/BackgroundImage";
+import CustomBackground from "../../styleguide/CustomBackground";
 
 const Home: React.FC = () => {
   const location = useLocation();
@@ -31,28 +35,25 @@ const Home: React.FC = () => {
   return (
     <MainMatter>
       <Margin bottom="m">
+        <BackgroundImage src={aboutImage}>
+          <Flex align="center" justify="center" fullWidth fullHeight>
+            <BackgroundImageContainer>
+              <CustomBackground alpha="0.85" background="surface">
+                <Padding all="l">
+                  <Text color="onSurface" variant="subtitle" textAlign="center">
+                    Vacci aims to give readers a short introduction to mRNA
+                    vaccines used against COVID-19.
+                  </Text>
+                </Padding>
+              </CustomBackground>
+            </BackgroundImageContainer>
+          </Flex>
+        </BackgroundImage>
+
         <Flex justify="space-between" gap={10} breakAt={800}>
           <Flex basis={70} direction="column">
             <Background background="surface">
               <Padding all="l">
-                <Text variant="title" element="h2" color="onBackground">
-                  <Text
-                    variant="title"
-                    element="span"
-                    color="primary"
-                    gutterRight="s"
-                  >
-                    <FontAwesomeIcon
-                      icon={["far", "lightbulb"]}
-                    ></FontAwesomeIcon>
-                  </Text>
-                  About Vacci
-                </Text>
-                <Divider />
-                <Text gutterTop="m" color="onBackground">
-                  Vacci aims to give readers a short introduction to mRNA
-                  vaccines used against COVID-19.
-                </Text>
                 <Text color="onBackground" gutterTop="m">
                   In Norway, four vaccines against COVID-19 are currently given
                   conditional approval. Two of these vaccines, the vaccines from
@@ -96,11 +97,11 @@ const Home: React.FC = () => {
           </Flex>
           <Flex basis={30} direction="column">
             <GlossaryInfoList />
-            <Margin top="s" bottom="s">
-              <QuickMrnaInfoList />
-            </Margin>
           </Flex>
         </Flex>
+      </Margin>
+      <Margin top="s" bottom="s">
+        <QuickMrnaInfoList />
       </Margin>
       <Background background="surface">
         <Padding all="l">

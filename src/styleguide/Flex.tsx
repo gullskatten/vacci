@@ -8,6 +8,7 @@ interface Props {
   flex?: number;
   basis?: number;
   fullWidth?: boolean;
+  fullHeight?: boolean;
   breakAt?: number;
   wrap?: "wrap" | "wrap-reverse";
 }
@@ -22,6 +23,12 @@ const Flex = styled.div<Props>`
     props.fullWidth &&
     css`
       width: 100%;
+    `}
+
+  ${(props) =>
+    props.fullHeight &&
+    css`
+      height: 100%;
     `}
 
   ${(props) =>

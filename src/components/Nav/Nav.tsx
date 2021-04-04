@@ -71,7 +71,7 @@ const Nav: React.FC = () => {
       <Flex justify="center" fullWidth>
         <MaxWidthWrapper>
           <Background background={"surface"} fullWidth>
-            <Padding all="m" fullWidth>
+            <Padding top="s" bottom="s" fullWidth>
               <Flex justify="space-between" align="center" fullWidth>
                 <StyledLink href="/" fontStyle="normal" textDecoration="unset">
                   <Text variant="title" element="h1" color="onBackground">
