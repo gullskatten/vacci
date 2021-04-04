@@ -9,9 +9,18 @@ import Modal from "../../styleguide/Modal";
 import Flex from "../../styleguide/Flex";
 import StyledLink from "../../styleguide/StyledLink";
 import StyledRouterLink from "../../styleguide/StyledRouterLink";
+import VaccineTypesTable from "./VaccineTypesTable";
+import Background from "../../styleguide/Background";
 
 const Relative = styled.div`
   position: relative;
+`;
+
+const StickyTitle = styled(Background)`
+  position: sticky;
+  top: 0;
+  padding: ${(props) => props.theme.spacing.m}
+    ${(props) => props.theme.spacing.s};
 `;
 
 const VaccineTypes: React.FC = () => {
@@ -28,16 +37,18 @@ const VaccineTypes: React.FC = () => {
       <Flex justify="center" align="center" fullWidth>
         <Margin top="l" fullWidth>
           <Modal>
-            <Flex fullWidth justify="space-between" align="center">
-              <Text variant="title" color="onBackground" element="h1">
-                Vaccine Types
-              </Text>
-              <Text color="onBackground" element="span">
-                <StyledRouterLink to="/" textDecoration="underline">
-                  Close
-                </StyledRouterLink>
-              </Text>
-            </Flex>
+            <StickyTitle background="surface">
+              <Flex fullWidth justify="space-between" align="center">
+                <Text variant="title" color="onBackground" element="h1">
+                  Vaccine Types
+                </Text>
+                <Text color="onBackground" element="span">
+                  <StyledRouterLink to="/" textDecoration="underline">
+                    Close
+                  </StyledRouterLink>
+                </Text>
+              </Flex>
+            </StickyTitle>
 
             <Text variant="body" color="onSurface" element="p" gutterTop="m">
               All vaccines share a common goal. Their aim is to provide
@@ -63,6 +74,9 @@ const VaccineTypes: React.FC = () => {
                 .
               </Text>
             </Text>
+            <Margin top="l">
+              <VaccineTypesTable />
+            </Margin>
           </Modal>
         </Margin>
       </Flex>

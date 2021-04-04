@@ -4,7 +4,7 @@ import Margin from "../../styleguide/Margin";
 import Flex from "../../styleguide/Flex";
 
 const MainMatterMaxWidth = styled.div`
-  max-width: 1000px;
+  max-width: 1400px;
   margin-top: ${(props) => props.theme.spacing.m};
 `;
 

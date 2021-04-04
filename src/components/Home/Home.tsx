@@ -3,7 +3,7 @@ import Margin from "../../styleguide/Margin";
 import Text from "../../styleguide/Text";
 import Flex from "../../styleguide/Flex";
 import Divider from "../../styleguide/Divider";
-import Background, { BackdropBackground } from "../../styleguide/Background";
+import Background from "../../styleguide/Background";
 import Padding from "../../styleguide/Padding";
 import AnimatedShortStories from "../Story/AnimatedShortStories";
 import OtherStories from "../Story/OtherStories";
@@ -11,12 +11,26 @@ import MainMatter from "../Content/MainMatter";
 import QuickMrnaInfoList from "./QuickMrnaInfoList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GlossaryInfoList from "./GlossaryInfoList";
+import { useLocation } from "react-router";
+import StyledImage from "../../styleguide/StyledImage";
+import aboutImage from "../../assets/images/about-covid-front.jpg";
 
 const Home: React.FC = () => {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    const isHome = location.pathname === "/" || "";
+
+    if (isHome) {
+      document.body.className = "";
+    } else {
+      document.body.className = "freeze";
+    }
+  }, [location.pathname]);
+
   return (
     <MainMatter>
       <Margin bottom="m">
-        <BackdropBackground background="secondary" />
         <Flex justify="space-between" gap={10} breakAt={800}>
           <Flex basis={70} direction="column">
             <Background background="surface">
@@ -79,12 +93,12 @@ const Home: React.FC = () => {
                 </Margin>
               </Padding>
             </Background>
+          </Flex>
+          <Flex basis={30} direction="column">
+            <GlossaryInfoList />
             <Margin top="s" bottom="s">
               <QuickMrnaInfoList />
             </Margin>
-          </Flex>
-          <Flex basis={30}>
-            <GlossaryInfoList />
           </Flex>
         </Flex>
       </Margin>

@@ -12,22 +12,28 @@ const ModalWrapper = styled.div`
   align-items: center;
   justify-content: center;
   will-change: transform;
-  max-height: 50vh;
-  overflow-y: auto;
+  overflow: auto;
+  height: 100%;
 `;
 
 const MaxWidthWrapper = styled.div`
   max-width: 900px;
   width: 100%;
+  height: 100%;
+`;
+
+const ModalCard = styled(Card)`
+  max-height: 85vh;
+  overflow: auto;
 `;
 
 const Modal: React.FC = ({ children }) => {
   return (
     <ModalWrapper>
       <MaxWidthWrapper>
-        <Card>
-          <Padding all="m">{children}</Padding>
-        </Card>
+        <ModalCard>
+          <Padding all="l">{children}</Padding>
+        </ModalCard>
       </MaxWidthWrapper>
     </ModalWrapper>
   );

@@ -21,6 +21,7 @@ export interface ISpacing {
   m: string;
   l: string;
   xl: string;
+  xxl: string;
   none: string;
 }
 

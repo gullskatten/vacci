@@ -21,7 +21,7 @@ const NavWrapper = styled.div`
 `;
 
 const MaxWidthWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 1400px;
   width: 100%;
 `;
 

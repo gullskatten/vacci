@@ -21,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.background};
     min-height: 100vh;
   }
+
+  .freeze {
+    height: 100%;
+    overflow: hidden;
+  }
 `;
 
 ReactDOM.render(
