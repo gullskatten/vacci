@@ -23,6 +23,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "title" &&
     css`
+      line-height: 2rem;
       font-family: ${props.theme.fonts.title};
       font-size: 2rem;
       font-weight: bold;
@@ -34,6 +35,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "subtitle" &&
     css`
+      line-height: 1.7rem;
       font-family: ${props.theme.fonts.title};
       font-size: 1.5rem;
       font-weight: bold;
@@ -45,6 +47,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "body" &&
     css`
+      line-height: 1.5rem;
       font-family: ${props.theme.fonts.body};
       font-size: 1rem;
       font-weight: normal;
@@ -57,6 +60,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "pico" &&
     css`
+      line-height: 1.2rem;
       font-family: ${props.theme.fonts.body};
       font-size: 0.8rem;
       font-weight: normal;

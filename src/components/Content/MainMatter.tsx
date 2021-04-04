@@ -6,9 +6,6 @@ import Flex from "../../styleguide/Flex";
 const MainMatterMaxWidth = styled.div`
   max-width: 1000px;
   margin-top: ${(props) => props.theme.spacing.m};
-  @media all and (max-width: 1100px) {
-    margin: ${(props) => props.theme.spacing.m};
-  }
 `;
 
 interface MainMatterProps {

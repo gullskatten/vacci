@@ -8,6 +8,7 @@ import Divider from "../../styleguide/Divider";
 import Flex from "../../styleguide/Flex";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { useHistory } from "react-router-dom";
 
 interface Props {
   src: any;
@@ -20,7 +21,6 @@ const StoryWireframe = styled.div<Props>`
   border-top-right-radius: 5px;
   background-image: url(${(props) => props.src});
   background-size: 100% 100%;
-  position: relative;
   cursor: pointer;
 
   @media all and (max-width: 475px) {
@@ -43,10 +43,16 @@ const StoryCard: React.FC<StoryCardProps> = ({
   description,
   withIcon,
 }) => {
+  const history = useHistory();
+
+  const onListItemClicked = () => {
+    history.push(href);
+  };
+
   return (
-    <Card fullWidth background="surface">
+    <Card fullWidth background="surface" onClick={onListItemClicked}>
       <StoryWireframe src={src}></StoryWireframe>
-      <Padding all="m">
+      <Padding all="m" fullWidth>
         <Flex fullWidth justify="space-between" align="center">
           <Text variant="subtitle" element="h3">
             <StyledLink href={href} color="onSurface" textDecoration="unset">

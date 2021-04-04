@@ -3,12 +3,13 @@ import { IColors } from "../../styled";
 
 interface ListProps {
   fullWidth?: boolean;
+  listStyle?: "circle" | "decimal" | "none";
 }
 
 const List = styled.ul<ListProps>`
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: ${(props) => (props.listStyle ? props.listStyle : "none")};
 
   ${(props) =>
     props.fullWidth &&
@@ -21,6 +22,10 @@ interface ListItemProps {
   background?: keyof IColors;
   clickable?: boolean;
 }
+
+const TinyListItem = styled.li`
+  padding: ${(props) => `${props.theme.spacing.s} ${props.theme.spacing.s}`};
+`;
 
 const ListItem = styled.li<ListItemProps>`
   padding: ${(props) => `${props.theme.spacing.m} ${props.theme.spacing.m}`};
@@ -40,4 +45,4 @@ const ListItem = styled.li<ListItemProps>`
     `}
 `;
 
-export { List, ListItem };
+export { List, ListItem, TinyListItem };

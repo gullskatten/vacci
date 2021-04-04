@@ -1,35 +1,34 @@
 import React from "react";
 import story from "../../assets/pt1_f3-4_attachment_to_cell.webp";
-import story2 from "../../assets/pt2_f3-6_getting_the_jab.webp";
+import story2 from "../../assets/pt2_f1_vaccines_blink.webp";
 import Flex from "../../styleguide/Flex";
-import Margin from "../../styleguide/Margin";
+import Padding from "../../styleguide/Padding";
 import StoryCard from "./StoryCard";
 
 const AnimatedShortStories: React.FC = () => {
   return (
     <Flex fullWidth breakAt={700} wrap="wrap">
       <Flex direction="column" flex={50}>
-        <Margin all="s">
+        <Padding all="s" fullWidth>
           <StoryCard
             title="SARS-CoV-2"
             href="/home/stories/sars-cov-2"
             src={story}
-            description="We look into the details of the SARS-CoV-2 virus and how it
-                  works."
+            description="The SARS-CoV-2 virus in a nutshell."
             withIcon={"arrow-right"}
           />
-        </Margin>
+        </Padding>
       </Flex>
       <Flex direction="column" flex={50}>
-        <Margin all="s">
+        <Padding all="s" fullWidth>
           <StoryCard
             title="mRNA Vaccine"
             href="/home/stories/mrna-vaccine"
             src={story2}
-            description="We explain the mRNA vaccine and its effect on the human body."
+            description="The mRNA vaccine 101 and its effects on your body."
             withIcon={"arrow-right"}
           />
-        </Margin>
+        </Padding>
       </Flex>
     </Flex>
   );

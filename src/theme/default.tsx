@@ -24,6 +24,7 @@ const vacciTheme: ITheme = {
     s: "0.5rem",
     m: "1rem",
     l: "2rem",
+    xl: "8rem",
     none: "0",
   },
 };

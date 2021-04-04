@@ -1,37 +1,34 @@
 import React from "react";
-import story from "../../assets/pt1_f3-4_attachment_to_cell.webp";
-import story2 from "../../assets/pt2_f3-6_getting_the_jab.webp";
 import story3 from "../../assets/images/6_vaccinated_holding_hands.png";
 import story4 from "../../assets/images/1_sceptical_person.png";
 import Flex from "../../styleguide/Flex";
 import Padding from "../../styleguide/Padding";
-import Margin from "../../styleguide/Margin";
 import StoryCard from "./StoryCard";
 
 const OtherStories: React.FC = () => {
   return (
     <Flex fullWidth breakAt={700} wrap="wrap">
       <Flex direction="column" flex={50}>
-        <Margin all="s">
+        <Padding all="s" fullWidth>
           <StoryCard
             title="Statistics"
             href="/statistics"
             src={story3}
-            description="We look at some statics for the SARS-CoV-2 pandemic."
+            description="Numbers don’t lie; let’s look at the stats!"
             withIcon={["far", "chart-bar"]}
           />
-        </Margin>
+        </Padding>
       </Flex>
       <Flex direction="column" flex={50}>
-        <Margin all="s">
+        <Padding all="s" fullWidth>
           <StoryCard
             title="Vaccine concerns"
             href="/concerns"
             src={story4}
-            description="We look at some concerns that people may have regarding the mRNA vaccines."
+            description="Still have concerns? No problem, we address them here."
             withIcon={["far", "frown-open"]}
           />
-        </Margin>
+        </Padding>
       </Flex>
     </Flex>
   );

@@ -16,72 +16,82 @@ const Concerns: React.FC = () => {
     <MainMatter>
       <Background background="surface" fullWidth>
         <Padding all="l">
-          <Text variant="title" element="h1" color="onSurface">
-            Vaccine concerns
-          </Text>
-          <Text variant="subtitle" element="h2" color="onBackgroundContrast">
-            Are you concerned about the Covid-19 vaccine?
-          </Text>
+          <Margin bottom="xl">
+            <Text variant="title" element="h1" color="onSurface">
+              Vaccine concerns
+            </Text>
+            <Text
+              variant="subtitle"
+              element="h2"
+              color="onBackgroundContrast"
+              gutterTop="s"
+            >
+              Are you concerned about the Covid-19 vaccine?
+            </Text>
 
-          <Flex>
-            <Flex basis={70} direction="column">
-              <Text color="onSurface" gutterTop="m">
-                Having concerns about unknown and unfamiliar things is part of
-                human nature. So if you do have concerns about the Covid-19
-                vaccine, you are propably a human.
-              </Text>
+            <Flex breakAt={800}>
+              <Flex basis={70} direction="column" breakAt={800}>
+                <Text color="onSurface" gutterTop="m">
+                  Having concerns about unknown and unfamiliar things is part of
+                  human nature. So if you do have concerns about the Covid-19
+                  vaccine, you are propably a human.
+                </Text>
 
-              <Text color="onSurface" gutterTop="m">
-                However, I am guessing you would agree, that when it comes to
-                making decisions important both for your own, as well as the
-                public health, you should not base your decision on whether
-                something is unfamiliar or not. Rather, you should educate
-                yourself, and become familiar with it.
-              </Text>
+                <Text color="onSurface" gutterTop="m">
+                  However, I am guessing you would agree, that when it comes to
+                  making decisions important both for your own, as well as the
+                  public health, you should not base your decision on whether
+                  something is unfamiliar or not. Rather, you should educate
+                  yourself, and become familiar with it.
+                </Text>
 
-              <Text color="onSurface" gutterTop="m">
-                Luckily, that is what we are here to help you with! We will try
-                look at the concerns you might have, and try to give you the
-                most relevant and accurate information out there - as well as
-                letting you know where information might be lacking.
-              </Text>
-              <Text color="onSurface" gutterTop="m">
-                We will not tell you whether or not you, in the end, should be
-                concerned about taking the vaccine. We can only hope that after
-                this presentation your attitude towards the vaccines is more
-                informed, and that this information will guide your final
-                decisions in vaccine taking.
-              </Text>
-            </Flex>
-            <Flex basis={30}>
-              <Flex align="center" justify="center" fullWidth>
-                <StyledImage src={srcScepticalPerson} height={250} />
+                <Text color="onSurface" gutterTop="m">
+                  Luckily, that is what we are here to help you with! We will
+                  try look at the concerns you might have, and try to give you
+                  the most relevant and accurate information out there - as well
+                  as letting you know where information might be lacking.
+                </Text>
+                <Text color="onSurface" gutterTop="m" gutterBottom="m">
+                  We will not tell you whether or not you, in the end, should be
+                  concerned about taking the vaccine. We can only hope that
+                  after this presentation your attitude towards the vaccines is
+                  more informed, and that this information will guide your final
+                  decisions in vaccine taking.
+                </Text>
+              </Flex>
+              <Flex basis={30}>
+                <Flex align="center" justify="center" fullWidth>
+                  <StyledImage src={srcScepticalPerson} height={250} />
+                </Flex>
               </Flex>
             </Flex>
-          </Flex>
+          </Margin>
         </Padding>
         <BackdropBackground background="secondary" />
         <Padding left="l" right="l" fullWidth>
           <Background background="surface">
             <Padding all="l">
-              <Text variant="subtitle" element="h2" color="onSurface">
-                Concern 1: Side effects
-              </Text>
-              <Flex fullWidth align="center" wrap="wrap" breakAt={400}>
-                <Flex basis={70}>
-                  <Text gutterTop="m" color="onSurface">
-                    A main concern about the Covid-19 vaccine is the side
-                    effects. Indeed, some people get side effects from the
-                    vaccines. Almost all of them mild, while a few are more
-                    severe. There are several ways to get information about the
-                    prevalence and severity of these side effects. Here we will
-                    look at some that can give us some necessary pointers.
-                  </Text>
+              <Margin top="l" bottom="xl">
+                <Text variant="subtitle" element="h2" color="onSurface">
+                  Concern 1: Side effects
+                </Text>
+                <Flex fullWidth align="center" wrap="wrap" breakAt={400}>
+                  <Flex basis={70} breakAt={500}>
+                    <Text gutterTop="m" color="onSurface" gutterBottom="m">
+                      A main concern about the Covid-19 vaccine is the side
+                      effects. Indeed, some people get side effects from the
+                      vaccines. Almost all of them mild, while a few are more
+                      severe. There are several ways to get information about
+                      the prevalence and severity of these side effects. Here we
+                      will look at some that can give us some necessary
+                      pointers.
+                    </Text>
+                  </Flex>
+                  <Flex basis={30} align="center" justify="center">
+                    <StyledImage src={srcOldPerson} height={250} />
+                  </Flex>
                 </Flex>
-                <Flex basis={30} align="center" justify="center">
-                  <StyledImage src={srcOldPerson} height={150} />
-                </Flex>
-              </Flex>
+              </Margin>
             </Padding>
           </Background>
         </Padding>
@@ -114,14 +124,11 @@ const Concerns: React.FC = () => {
               <Text color="onSurface" gutterTop="m">
                 Other studies have found that just over 50 % of people who are
                 vaccinated in Norway get mild side effects like soreness where
-                the vaccine was taken, headaches and tiredness{" "}
-                <Text color="onSurface" element="span" bold>
-                  [4]
-                </Text>
-                . Many also report experiencing muscle achings and chills. A bit
-                less than 5 % experience more severe local and systemic side
-                effects, which affected their daily life (for the few days they
-                experienced it).
+                the vaccine was taken, headaches and tiredness. Many also report
+                experiencing muscle achings and chills. A bit less than 5 %
+                experience more severe local and systemic side effects, which
+                affected their daily life (for the few days they experienced
+                it).
               </Text>
               <Text color="onSurface" gutterTop="m">
                 A very small number of people, 2-11 cases out of a million
@@ -160,7 +167,7 @@ const Concerns: React.FC = () => {
             <Flex basis={30} direction="column">
               <Margin bottom="m" fullWidth>
                 <Flex align="center" justify="center" fullWidth>
-                  <StyledImage src={srcMildFeverPerson} />
+                  <StyledImage src={srcMildFeverPerson} height={250} />
                 </Flex>
               </Margin>
               <Margin bottom="m" fullWidth>
