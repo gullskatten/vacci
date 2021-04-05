@@ -16,7 +16,7 @@ interface Props {
 
 const StoryWireframe = styled.div<Props>`
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-image: url(${(props) => props.src});
@@ -50,7 +50,12 @@ const StoryCard: React.FC<StoryCardProps> = ({
   };
 
   return (
-    <Card fullWidth background="surface" onClick={onListItemClicked}>
+    <Card
+      width={400}
+      height={450}
+      background="surface"
+      onClick={onListItemClicked}
+    >
       <StoryWireframe src={src}></StoryWireframe>
       <Padding all="m" fullWidth>
         <Flex fullWidth justify="space-between" align="center">
