@@ -1,16 +1,9 @@
 import React from "react";
-import Background from "../../styleguide/Background";
-import {
-  BackgroundImage,
-  BackgroundImageContainer,
-} from "../../styleguide/BackgroundImage";
+import { BackgroundImage } from "../../styleguide/BackgroundImage";
 import CustomBackground from "../../styleguide/CustomBackground";
-import Flex from "../../styleguide/Flex";
-import Margin from "../../styleguide/Margin";
 import Padding from "../../styleguide/Padding";
 import Text from "../../styleguide/Text";
 import AnimatedShortStories from "../Story/AnimatedShortStories";
-import OtherStories from "../Story/OtherStories";
 import unBanner from "../../assets/images/serj-transport.jpg";
 const LearnAboutSection: React.FC = () => {
   return (
@@ -30,20 +23,7 @@ const LearnAboutSection: React.FC = () => {
         </CustomBackground>
       </BackgroundImage>
       <Padding all="l">
-        <Flex direction="column" gap={10}>
-          <Flex align="center" justify="center" fullWidth>
-            <AnimatedShortStories />
-          </Flex>
-
-          <Margin top="m" bottom="m">
-            <Text variant="title" element="h2" color="onBackgroundContrast">
-              Read more
-            </Text>
-          </Margin>
-          <Flex align="center" justify="center" fullWidth>
-            <OtherStories />
-          </Flex>
-        </Flex>
+        <AnimatedShortStories />
       </Padding>
     </CustomBackground>
   );

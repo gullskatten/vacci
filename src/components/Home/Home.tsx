@@ -2,14 +2,9 @@ import React from "react";
 import Margin from "../../styleguide/Margin";
 import Text from "../../styleguide/Text";
 import Flex from "../../styleguide/Flex";
-import Divider from "../../styleguide/Divider";
-import Background from "../../styleguide/Background";
 import Padding from "../../styleguide/Padding";
-import AnimatedShortStories from "../Story/AnimatedShortStories";
-import OtherStories from "../Story/OtherStories";
 import MainMatter from "../Content/MainMatter";
 import MrnaBenefits from "./MrnaBenefits";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import GlossaryInfoList from "./GlossaryInfoList";
 import { useLocation } from "react-router";
 import aboutImage from "../../assets/images/about-covid-front.jpg";
@@ -21,6 +16,7 @@ import CustomBackground from "../../styleguide/CustomBackground";
 import NavigationLink from "../../styleguide/NavigationLink";
 import AboutVacciSection from "./AboutVacciSection";
 import LearnAboutSection from "./LearnAboutSection";
+import styled from "styled-components";
 
 const Home: React.FC = () => {
   const location = useLocation();
@@ -58,7 +54,7 @@ const Home: React.FC = () => {
           <AboutVacciSection />
           <LearnAboutSection />
         </Flex>
-        <Flex basis={30} direction="column">
+        <Flex basis={30} direction="column" fullHeight>
           <GlossaryInfoList />
           <Margin top="m">
             <Flex fullWidth direction="column">
@@ -81,7 +77,9 @@ const Home: React.FC = () => {
           </Margin>
         </Flex>
       </Flex>
-      <MrnaBenefits />
+      <Margin top="m">
+        <MrnaBenefits />
+      </Margin>
     </MainMatter>
   );
 };
