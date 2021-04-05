@@ -5,11 +5,11 @@ import Background from "../../styleguide/Background";
 import Text from "../../styleguide/Text";
 import StyledLink from "../../styleguide/StyledLink";
 import Padding from "../../styleguide/Padding";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Margin from "../../styleguide/Margin";
 import HideIf from "../../styleguide/HideIf";
-
+import StyledImage from "../../styleguide/StyledImage";
+import logo from "../../assets/images/nav_logo.png";
 const NavWrapper = styled.div`
   position: sticky;
   top: 0;
@@ -73,19 +73,27 @@ const Nav: React.FC = () => {
           <Background background={"surface"} fullWidth>
             <Padding top="s" bottom="s" fullWidth>
               <Flex justify="space-between" align="center" fullWidth>
-                <StyledLink href="/" fontStyle="normal" textDecoration="unset">
-                  <Text variant="title" element="h1" color="onBackground">
-                    <Text
-                      element="span"
-                      gutterRight="s"
-                      variant="title"
-                      color="secondary"
+                <Flex align="center">
+                  <HideIf screenSize="l">
+                    <Margin left="s" />
+                  </HideIf>
+                  <StyledImage src={logo} height={45} />
+                  <Text
+                    variant="title"
+                    element="h1"
+                    color="onBackground"
+                    gutterLeft="m"
+                  >
+                    <StyledLink
+                      href="/"
+                      fontStyle="normal"
+                      textDecoration="unset"
                     >
-                      <FontAwesomeIcon icon="virus" />
-                    </Text>{" "}
-                    Vacci
+                      Vacci.no
+                    </StyledLink>
                   </Text>
-                </StyledLink>
+                </Flex>
+
                 <HideIf screenSize="s">
                   <Flex align="center">
                     {navigationListItems.map((item: NavigationLink) => (

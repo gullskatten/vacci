@@ -5,6 +5,8 @@ interface Props {
   background?: keyof IColors;
   fullWidth?: boolean;
   clickable?: boolean;
+  height?: number;
+  width?: number;
 }
 
 const Card = styled.div<Props>`
@@ -19,6 +21,16 @@ const Card = styled.div<Props>`
       width: 100%;
     `}
 
+  ${(props) =>
+    props.height &&
+    css`
+      height: ${props.height}px;
+    `}
+    ${(props) =>
+    props.width &&
+    css`
+      width: ${props.width}px;
+    `}
   ${(props) =>
     props.clickable &&
     css`

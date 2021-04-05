@@ -11,6 +11,7 @@ import StyledLink from "../../styleguide/StyledLink";
 import StyledRouterLink from "../../styleguide/StyledRouterLink";
 import VaccineTypesTable from "./VaccineTypesTable";
 import Background from "../../styleguide/Background";
+import { List, TinyListItem } from "../../styleguide/List";
 
 const Relative = styled.div`
   position: relative;
@@ -21,11 +22,17 @@ const StickyTitle = styled(Background)`
   top: 0;
   padding: ${(props) => props.theme.spacing.m}
     ${(props) => props.theme.spacing.s};
+
+  width: 100%;
 `;
 
 const VaccineTypes: React.FC = () => {
   const { setRoute } = React.useContext(RouteContext);
   const history = useHistory();
+
+  React.useEffect(() => {
+    document.title = "List Of Vaccine Types - Vacci.no";
+  }, []);
 
   const routeToHome = () => {
     history.push("/");
@@ -49,7 +56,6 @@ const VaccineTypes: React.FC = () => {
                 </Text>
               </Flex>
             </StickyTitle>
-
             <Text variant="body" color="onSurface" element="p" gutterTop="m">
               All vaccines share a common goal. Their aim is to provide
               protection against a disease. This is accomplished by triggering
@@ -74,9 +80,74 @@ const VaccineTypes: React.FC = () => {
                 .
               </Text>
             </Text>
-            <Margin top="l">
+            <Margin top="l" bottom="s">
               <VaccineTypesTable />
             </Margin>
+            <List>
+              <TinyListItem>
+                <Text variant="pico" element="p" color="onSurface" bold>
+                  Sources:
+                </Text>
+              </TinyListItem>
+              <TinyListItem>
+                <Text color="onSurface" variant="pico">
+                  <StyledLink
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7778607/"
+                    textDecoration="underline"
+                  >
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7778607/
+                  </StyledLink>
+                </Text>
+              </TinyListItem>
+              <TinyListItem>
+                <Text color="onSurface" variant="pico">
+                  <StyledLink
+                    href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines"
+                    textDecoration="underline"
+                  >
+                    https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines
+                  </StyledLink>
+                </Text>
+              </TinyListItem>
+            </List>
+
+            <List>
+              <TinyListItem>
+                <Text variant="pico" element="p" color="onSurface" bold>
+                  Inspired by:
+                </Text>
+              </TinyListItem>
+              <TinyListItem>
+                <Text color="onSurface" variant="pico">
+                  <StyledLink
+                    href="https://www.nature.com/articles/d41586-020-01221-y"
+                    textDecoration="underline"
+                  >
+                    https://www.nature.com/articles/d41586-020-01221-y
+                  </StyledLink>
+                </Text>
+              </TinyListItem>
+              <TinyListItem>
+                <Text color="onSurface" variant="pico">
+                  <StyledLink
+                    href="https://www.immunology.org/coronavirus/connect-coronavirus-public-engagement-resources/types-vaccines-for-covid-19"
+                    textDecoration="underline"
+                  >
+                    https://www.immunology.org/coronavirus/connect-coronavirus-public-engagement-resources/types-vaccines-for-covid-19
+                  </StyledLink>
+                </Text>
+              </TinyListItem>
+              <TinyListItem>
+                <Text color="onSurface" variant="pico">
+                  <StyledLink
+                    href="https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_20Jan2021_v2.pdf"
+                    textDecoration="underline"
+                  >
+                    https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_20Jan2021_v2.pdf
+                  </StyledLink>
+                </Text>
+              </TinyListItem>
+            </List>
           </Modal>
         </Margin>
       </Flex>

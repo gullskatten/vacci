@@ -213,6 +213,75 @@ const VaccineTypesTable: React.FC = () => {
           </List>
         </TableData>
       </TableRow>
+
+      <TableRow>
+        <TableData>
+          <Text color="onSurface" element="span">
+            mRNA vaccine
+          </Text>
+        </TableData>
+        <TableData>
+          <Text color="onSurface" element="span">
+            Based on mRNA which is delivered to cells in your body. The cells
+            produce viral proteins from on the mRNA, and these proteins trigger
+            an immune response.
+          </Text>
+        </TableData>
+        <TableData>
+          <List>
+            <TinyListItem>
+              <Text color="onSurface" element="span">
+                Pfizer/BioNTech
+              </Text>
+            </TinyListItem>
+            <TinyListItem>
+              <Text color="onSurface" element="span">
+                Moderna
+              </Text>
+            </TinyListItem>
+            <TinyListItem>
+              <Text color="onSurface" element="span">
+                CureVac AG
+              </Text>
+            </TinyListItem>
+          </List>
+        </TableData>
+      </TableRow>
+
+      <TableRow>
+        <TableData>
+          <Text color="onSurface" element="span">
+            DNA vaccine
+          </Text>
+        </TableData>
+        <TableData>
+          <Text color="onSurface" element="span">
+            Similar to mRNA vaccines, but are based on DNA. DNA is delivered to
+            cells in your body. This is converted to mRNA and used to make
+            proteins as described for mRNA vaccines.
+          </Text>
+        </TableData>
+        <TableData>
+          <List>
+            <TinyListItem>
+              <Text color="onSurface" element="span">
+                Inovio Pharmaceuticals/International Vaccine Institute/Advaccine
+                (Suzhou) Biopharmaceutical Co., Ltd
+              </Text>
+            </TinyListItem>
+            <TinyListItem>
+              <Text color="onSurface" element="span">
+                AnGes/Takara Bio/ Osaka University
+              </Text>
+            </TinyListItem>
+            <TinyListItem>
+              <Text color="onSurface" element="span">
+                Zydus Cadila
+              </Text>
+            </TinyListItem>
+          </List>
+        </TableData>
+      </TableRow>
     </Table>
   );
 };

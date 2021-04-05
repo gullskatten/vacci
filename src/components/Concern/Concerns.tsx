@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Background, { BackdropBackground } from "../../styleguide/Background";
 import Flex from "../../styleguide/Flex";
 import Padding from "../../styleguide/Padding";
@@ -13,6 +13,10 @@ import StyledLink from "../../styleguide/StyledLink";
 import CustomBackground from "../../styleguide/CustomBackground";
 
 const Concerns: React.FC = () => {
+  React.useEffect(() => {
+    document.title = "Vaccine Concerns - Vacci.no";
+  }, []);
+
   return (
     <MainMatter>
       <Background background="surface" fullWidth>

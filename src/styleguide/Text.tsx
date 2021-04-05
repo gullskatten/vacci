@@ -61,7 +61,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "pico" &&
     css`
-      line-height: 1.2;
+      line-height: 1.5;
       font-family: ${props.theme.fonts.body};
       font-size: 0.8rem;
       font-weight: normal;

@@ -22,7 +22,7 @@ const HideIf = styled.div<HideIfProps>`
     ${(props) =>
     props.screenSize === "l" &&
     css`
-      @media all and (min-width: 1000px) {
+      @media all and (min-width: 1400px) {
         display: none;
       }
     `}

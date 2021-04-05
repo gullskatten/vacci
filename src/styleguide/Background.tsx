@@ -4,6 +4,7 @@ import styled, { css } from "styled-components";
 interface Props {
   background?: keyof IColors;
   fullWidth?: boolean;
+  clickable?: boolean;
   withShadow?: boolean;
 }
 
@@ -16,7 +17,11 @@ const Background = styled.div<Props>`
     css`
       width: 100%;
     `}
-
+  ${(props) =>
+    props.clickable &&
+    css`
+      cursor: pointer;
+    `}
   ${(props) =>
     props.withShadow &&
     css`

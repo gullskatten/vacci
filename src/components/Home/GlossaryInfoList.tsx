@@ -1,6 +1,8 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import React from "react";
 import { List, ListItem } from "../../styleguide/List";
+import Margin from "../../styleguide/Margin";
+import NavigationLink from "../../styleguide/NavigationLink";
 import Text from "../../styleguide/Text";
 
 const GlossaryInfoList: React.FC = () => {
