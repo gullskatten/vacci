@@ -16,7 +16,6 @@ const App: React.FC = () => {
       <Route path="/" component={Nav} />
       <Route path="/" component={ColorPickerNavAction} />
       <Route path="/concerns" component={Concerns} />
-      <Route path="/statistics" component={Stats} />
       <Route path="/" exact component={Home} />
       <Route path="/" component={Footer} />
     </Router>
