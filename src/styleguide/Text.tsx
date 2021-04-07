@@ -6,6 +6,7 @@ interface Props {
   color?: keyof IColors;
   variant?: "title" | "subtitle" | "body" | "pico";
   element?: "span" | "p" | "h1" | "h2" | "h3" | "label";
+  textAlign?: "center" | "left" | "right";
   gutterLeft?: keyof ISpacing;
   gutterRight?: keyof ISpacing;
   gutterTop?: keyof ISpacing;
@@ -23,6 +24,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "title" &&
     css`
+      line-height: 2;
       font-family: ${props.theme.fonts.title};
       font-size: 2rem;
       font-weight: bold;
@@ -34,6 +36,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "subtitle" &&
     css`
+      line-height: 1.7;
       font-family: ${props.theme.fonts.title};
       font-size: 1.5rem;
       font-weight: bold;
@@ -45,6 +48,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "body" &&
     css`
+      line-height: 1.5;
       font-family: ${props.theme.fonts.body};
       font-size: 1rem;
       font-weight: normal;
@@ -57,6 +61,7 @@ const TextStyles = styled.div<Props>`
   ${(props) =>
     props.variant == "pico" &&
     css`
+      line-height: 1.5;
       font-family: ${props.theme.fonts.body};
       font-size: 0.8rem;
       font-weight: normal;
@@ -99,6 +104,12 @@ const TextStyles = styled.div<Props>`
     props.bold &&
     css`
       font-weight: bold;
+    `};
+
+  ${(props) =>
+    props.textAlign &&
+    css`
+      text-align: ${props.textAlign};
     `};
 `;
 

@@ -4,11 +4,7 @@ import Margin from "../../styleguide/Margin";
 import Flex from "../../styleguide/Flex";
 
 const MainMatterMaxWidth = styled.div`
-  max-width: 1000px;
-  margin-top: ${(props) => props.theme.spacing.m};
-  @media all and (max-width: 1100px) {
-    margin: ${(props) => props.theme.spacing.m};
-  }
+  max-width: 1400px;
 `;
 
 interface MainMatterProps {
@@ -18,7 +14,7 @@ interface MainMatterProps {
 const MainMatter: React.FC<MainMatterProps> = ({ children }) => {
   return (
     <Flex fullWidth direction="column" align="center">
-      <Margin top="m" bottom="m">
+      <Margin bottom="m">
         <MainMatterMaxWidth>{children}</MainMatterMaxWidth>
       </Margin>
     </Flex>

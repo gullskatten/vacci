@@ -8,6 +8,8 @@ import Divider from "../../styleguide/Divider";
 import Flex from "../../styleguide/Flex";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { useHistory } from "react-router-dom";
+import Margin from "../../styleguide/Margin";
 
 interface Props {
   src: any;
@@ -15,12 +17,12 @@ interface Props {
 
 const StoryWireframe = styled.div<Props>`
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-image: url(${(props) => props.src});
-  background-size: 100% 100%;
-  position: relative;
+  background: url("${(props) => props.src}") no-repeat;
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
 
   @media all and (max-width: 475px) {
@@ -43,29 +45,52 @@ const StoryCard: React.FC<StoryCardProps> = ({
   description,
   withIcon,
 }) => {
-  return (
-    <Card fullWidth background="surface">
-      <StoryWireframe src={src}></StoryWireframe>
-      <Padding all="m">
-        <Flex fullWidth justify="space-between" align="center">
-          <Text variant="subtitle" element="h3">
-            <StyledLink href={href} color="onSurface" textDecoration="unset">
-              {title}
-            </StyledLink>
-          </Text>
-          {withIcon && (
-            <Text variant="subtitle" element="span" color="primary">
-              <FontAwesomeIcon icon={withIcon} />
-            </Text>
-          )}
-        </Flex>
+  const history = useHistory();
 
-        <Divider color="background" fullWidth lineWidth={1} />
-        <Text gutterTop="s" gutterBottom="m" color="onSurface">
-          {description}
-        </Text>
-      </Padding>
-    </Card>
+  const onListItemClicked = () => {
+    history.push(href);
+  };
+
+  return (
+    <Margin fullWidth all="s">
+      <Card
+        background="surface"
+        onClick={onListItemClicked}
+        fullWidth
+        clickable
+      >
+        <Flex fullWidth wrap="wrap">
+          <Flex flex={30}>
+            <StoryWireframe src={src} />
+          </Flex>
+          <Flex flex={70}>
+            <Padding all="m" fullWidth>
+              <Flex fullWidth justify="space-between" align="center">
+                <Text variant="subtitle" element="h3">
+                  <StyledLink
+                    href={href}
+                    color="onSurface"
+                    textDecoration="unset"
+                  >
+                    {title}
+                  </StyledLink>
+                </Text>
+                {withIcon && (
+                  <Text variant="subtitle" element="span" color="primary">
+                    <FontAwesomeIcon icon={withIcon} />
+                  </Text>
+                )}
+              </Flex>
+
+              <Divider color="background" fullWidth lineWidth={1} />
+              <Text gutterTop="s" gutterBottom="m" color="onSurface">
+                {description}
+              </Text>
+            </Padding>
+          </Flex>
+        </Flex>
+      </Card>
+    </Margin>
   );
 };
 

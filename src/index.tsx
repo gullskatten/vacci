@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle } from "styled-components";
 import App from "./App";
+import { RouteContextProvider } from "./context/RouteContext";
 import { ThemeWrapperContextProvider } from "./context/ThemeWrapperContext";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -19,14 +21,23 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.background};
     min-height: 100vh;
   }
+
+  .freeze {
+    height: 100%;
+    overflow: hidden;
+  }
 `;
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeWrapperContextProvider>
-      <GlobalStyle />
-      <App />
-    </ThemeWrapperContextProvider>
+    <Router>
+      <ThemeWrapperContextProvider>
+        <RouteContextProvider>
+          <GlobalStyle />
+          <App />
+        </RouteContextProvider>
+      </ThemeWrapperContextProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -5,6 +5,11 @@ import {
   faPalette,
   faTimes,
   faArrowRight,
+  faScroll,
+  faVirusSlash,
+  faTruckLoading,
+  faHandHoldingMedical,
+  faShieldVirus,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -24,6 +29,11 @@ export default function loadIcons() {
     faChartBar,
     faFrownOpen,
     faArrowRight,
-    faLightbulb
+    faLightbulb,
+    faScroll,
+    faVirusSlash,
+    faTruckLoading,
+    faHandHoldingMedical,
+    faShieldVirus
   );
 }

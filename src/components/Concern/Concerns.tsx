@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Background, { BackdropBackground } from "../../styleguide/Background";
 import Flex from "../../styleguide/Flex";
 import Padding from "../../styleguide/Padding";
@@ -10,21 +10,31 @@ import srcMildFeverPerson from "../../assets/images/2_person_with_mild_fever.png
 import srcScepticalPerson from "../../assets/images/1_sceptical_person_cropped.png";
 import Margin from "../../styleguide/Margin";
 import StyledLink from "../../styleguide/StyledLink";
+import CustomBackground from "../../styleguide/CustomBackground";
 
 const Concerns: React.FC = () => {
+  React.useEffect(() => {
+    document.title = "Vaccine Concerns - Vacci.no";
+  }, []);
+
   return (
     <MainMatter>
       <Background background="surface" fullWidth>
-        <Padding all="l">
+        <Padding all="xl">
           <Text variant="title" element="h1" color="onSurface">
             Vaccine concerns
           </Text>
-          <Text variant="subtitle" element="h2" color="onBackgroundContrast">
+          <Text
+            variant="subtitle"
+            element="h2"
+            color="onBackgroundContrast"
+            gutterTop="s"
+          >
             Are you concerned about the Covid-19 vaccine?
           </Text>
 
-          <Flex>
-            <Flex basis={70} direction="column">
+          <Flex breakAt={800}>
+            <Flex basis={70} direction="column" breakAt={800}>
               <Text color="onSurface" gutterTop="m">
                 Having concerns about unknown and unfamiliar things is part of
                 human nature. So if you do have concerns about the Covid-19
@@ -45,7 +55,7 @@ const Concerns: React.FC = () => {
                 most relevant and accurate information out there - as well as
                 letting you know where information might be lacking.
               </Text>
-              <Text color="onSurface" gutterTop="m">
+              <Text color="onSurface" gutterTop="m" gutterBottom="m">
                 We will not tell you whether or not you, in the end, should be
                 concerned about taking the vaccine. We can only hope that after
                 this presentation your attitude towards the vaccines is more
@@ -64,138 +74,139 @@ const Concerns: React.FC = () => {
         <Padding left="l" right="l" fullWidth>
           <Background background="surface">
             <Padding all="l">
-              <Text variant="subtitle" element="h2" color="onSurface">
-                Concern 1: Side effects
-              </Text>
-              <Flex fullWidth align="center" wrap="wrap" breakAt={400}>
-                <Flex basis={70}>
-                  <Text gutterTop="m" color="onSurface">
-                    A main concern about the Covid-19 vaccine is the side
-                    effects. Indeed, some people get side effects from the
-                    vaccines. Almost all of them mild, while a few are more
-                    severe. There are several ways to get information about the
-                    prevalence and severity of these side effects. Here we will
-                    look at some that can give us some necessary pointers.
-                  </Text>
+              <Margin top="l">
+                <Flex fullWidth align="center" wrap="wrap" breakAt={400}>
+                  <Flex basis={70} breakAt={500} direction="column">
+                    <Text variant="subtitle" element="h2" color="onSurface">
+                      Concern 1: Side effects
+                    </Text>
+                    <Text gutterTop="m" color="onSurface" gutterBottom="m">
+                      A main concern about the Covid-19 vaccine is the side
+                      effects. Indeed, some people get side effects from the
+                      vaccines. Almost all of them mild, while a few are more
+                      severe. There are several ways to get information about
+                      the prevalence and severity of these side effects. Here we
+                      will look at some that can give us some necessary
+                      pointers.
+                    </Text>
+                  </Flex>
+                  <Flex basis={30} align="center" justify="center">
+                    <StyledImage src={srcOldPerson} height={250} />
+                  </Flex>
                 </Flex>
-                <Flex basis={30} align="center" justify="center">
-                  <StyledImage src={srcOldPerson} height={150} />
-                </Flex>
-              </Flex>
+              </Margin>
             </Padding>
           </Background>
         </Padding>
-
-        <Padding all="l">
-          <Text variant="title" element="h1" color="onSurface">
-            A Dive Into the Numbers
-          </Text>
-          <Flex>
-            <Flex direction="column" basis={70}>
-              <Text color="onSurface" gutterTop="m">
-                In a report from legemiddelverket (updated march 2nd), they
-                found that while there have been 510 000 administered vaccine
-                shots in Norway, there were only 3636 reports of suspected side
-                effects{" "}
-                <Text color="onSurface" element="span" bold>
-                  [1]
+        <CustomBackground background={"primary"} alpha={"0.1"}>
+          <Padding all="xl">
+            <Text variant="title" element="h1" color="onSurface">
+              A Dive Into the Numbers
+            </Text>
+            <Flex>
+              <Flex direction="column" basis={70}>
+                <Text color="onSurface" gutterTop="m">
+                  In a report from legemiddelverket (updated march 2nd), they
+                  found that while there have been 510 000 administered vaccine
+                  shots in Norway, there were only 3636 reports of suspected
+                  side effects{" "}
+                  <Text color="onSurface" element="span" bold>
+                    [1]
+                  </Text>
+                  .
                 </Text>
-                .
-              </Text>
 
-              <Text color="onSurface" gutterTop="m">
-                This is however not necessarily an accurate representations of
-                the number of people who get side effects, as it is not likely
-                that everyone who experienced side effects reported them. Also,
-                it is not certain whether the symptoms reported is linked to the
-                vaccine.
-              </Text>
-
-              <Text color="onSurface" gutterTop="m">
-                Other studies have found that just over 50 % of people who are
-                vaccinated in Norway get mild side effects like soreness where
-                the vaccine was taken, headaches and tiredness{" "}
-                <Text color="onSurface" element="span" bold>
-                  [4]
+                <Text color="onSurface" gutterTop="m">
+                  This is however not necessarily an accurate representations of
+                  the number of people who get side effects, as it is not likely
+                  that everyone who experienced side effects reported them.
+                  Also, it is not certain whether the symptoms reported is
+                  linked to the vaccine.
                 </Text>
-                . Many also report experiencing muscle achings and chills. A bit
-                less than 5 % experience more severe local and systemic side
-                effects, which affected their daily life (for the few days they
-                experienced it).
-              </Text>
-              <Text color="onSurface" gutterTop="m">
-                A very small number of people, 2-11 cases out of a million
-                administrations to be exact, experience severe allergic
-                reactions to corona vaccines. In "normal" vaccine this
-                prevalence is lower, at about 0,8 out of every one million
-                administrations. Because of this, every institutions that is
-                allowed to administer vaccines, needs to have functioning
-                protocols for dealing with possible allergic reactions{" "}
-                <Text color="onSurface" element="span" bold>
-                  [2]
-                </Text>
-                .
-              </Text>
 
-              <Text color="onSurface" gutterTop="m" bold>
-                References
-              </Text>
-              <Text color="onSurface" variant="pico" gutterTop="m">
-                <StyledLink
-                  href="https://legemiddelverket.no/Documents/Bivirkninger%20og%20sikkerhet/Rapporter%20og%20oversikter/Koronavaksiner/20210302Rapport%20over%20meldte%20bivirkninger%20av%20koronavaksine.pdf"
-                  textDecoration="underline"
-                >
-                  [1] Legemiddelverket
-                </StyledLink>
-              </Text>
-              <Text color="onSurface" variant="pico" gutterTop="m">
-                <StyledLink
-                  href=" https://www.dagensmedisin.no/artikler/2021/02/18/flere-far-anafylaksi-med-koronavaksine--kan-skyldes-fyllstoff/"
-                  textDecoration="underline"
-                >
-                  [2] Dagens Medisin
-                </StyledLink>
-              </Text>
+                <Text color="onSurface" gutterTop="m">
+                  Other studies have found that just over 50 % of people who are
+                  vaccinated in Norway get mild side effects like soreness where
+                  the vaccine was taken, headaches and tiredness. Many also
+                  report experiencing muscle achings and chills. A bit less than
+                  5 % experience more severe local and systemic side effects,
+                  which affected their daily life (for the few days they
+                  experienced it).
+                </Text>
+                <Text color="onSurface" gutterTop="m">
+                  A very small number of people, 2-11 cases out of a million
+                  administrations to be exact, experience severe allergic
+                  reactions to corona vaccines. In "normal" vaccine this
+                  prevalence is lower, at about 0,8 out of every one million
+                  administrations. Because of this, every institutions that is
+                  allowed to administer vaccines, needs to have functioning
+                  protocols for dealing with possible allergic reactions{" "}
+                  <Text color="onSurface" element="span" bold>
+                    [2]
+                  </Text>
+                  .
+                </Text>
+
+                <Text color="onSurface" gutterTop="m" bold>
+                  References
+                </Text>
+                <Text color="onSurface" variant="pico" gutterTop="m">
+                  <StyledLink
+                    href="https://legemiddelverket.no/Documents/Bivirkninger%20og%20sikkerhet/Rapporter%20og%20oversikter/Koronavaksiner/20210302Rapport%20over%20meldte%20bivirkninger%20av%20koronavaksine.pdf"
+                    textDecoration="underline"
+                  >
+                    [1] Legemiddelverket
+                  </StyledLink>
+                </Text>
+                <Text color="onSurface" variant="pico" gutterTop="m">
+                  <StyledLink
+                    href=" https://www.dagensmedisin.no/artikler/2021/02/18/flere-far-anafylaksi-med-koronavaksine--kan-skyldes-fyllstoff/"
+                    textDecoration="underline"
+                  >
+                    [2] Dagens Medisin
+                  </StyledLink>
+                </Text>
+              </Flex>
+              <Flex basis={30} direction="column">
+                <Margin bottom="m" fullWidth>
+                  <Flex align="center" justify="center" fullWidth>
+                    <StyledImage src={srcMildFeverPerson} height={250} />
+                  </Flex>
+                </Margin>
+                <Margin bottom="m" fullWidth>
+                  <Flex
+                    align="center"
+                    justify="center"
+                    fullWidth
+                    direction="column"
+                  >
+                    <Text variant="title" color="primary" element="h3">
+                      50%
+                    </Text>
+                    <Text color="onSurface" gutterTop="s">
+                      Experience mild symptoms
+                    </Text>
+                  </Flex>
+                </Margin>
+                <Margin bottom="m" fullWidth>
+                  <Flex
+                    align="center"
+                    justify="center"
+                    fullWidth
+                    direction="column"
+                  >
+                    <Text variant="title" color="secondary" element="h3">
+                      {"<5%"}
+                    </Text>
+                    <Text color="onSurface" gutterTop="s">
+                      More severe side effects
+                    </Text>
+                  </Flex>
+                </Margin>
+              </Flex>
             </Flex>
-            <Flex basis={30} direction="column">
-              <Margin bottom="m" fullWidth>
-                <Flex align="center" justify="center" fullWidth>
-                  <StyledImage src={srcMildFeverPerson} />
-                </Flex>
-              </Margin>
-              <Margin bottom="m" fullWidth>
-                <Flex
-                  align="center"
-                  justify="center"
-                  fullWidth
-                  direction="column"
-                >
-                  <Text variant="title" color="primary" element="h3">
-                    50%
-                  </Text>
-                  <Text color="onSurface" gutterTop="s">
-                    Experience mild symptoms
-                  </Text>
-                </Flex>
-              </Margin>
-              <Margin bottom="m" fullWidth>
-                <Flex
-                  align="center"
-                  justify="center"
-                  fullWidth
-                  direction="column"
-                >
-                  <Text variant="title" color="secondary" element="h3">
-                    {"<5%"}
-                  </Text>
-                  <Text color="onSurface" gutterTop="s">
-                    More severe side effects
-                  </Text>
-                </Flex>
-              </Margin>
-            </Flex>
-          </Flex>
-        </Padding>
+          </Padding>
+        </CustomBackground>
       </Background>
     </MainMatter>
   );
