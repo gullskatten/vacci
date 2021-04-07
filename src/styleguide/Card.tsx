@@ -7,11 +7,10 @@ interface Props {
   clickable?: boolean;
   height?: number;
   width?: number;
+  roundedCorners?: boolean;
 }
 
 const Card = styled.div<Props>`
-  border-radius: 5px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   background-color: ${(props) =>
     props.theme.colors[props.background || "surface"]};
 
@@ -20,7 +19,12 @@ const Card = styled.div<Props>`
     css`
       width: 100%;
     `}
-
+  ${(props) =>
+    props.roundedCorners &&
+    css`
+      border-radius: 5px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    `}
   ${(props) =>
     props.height &&
     css`

@@ -31,7 +31,7 @@ const Modal: React.FC = ({ children }) => {
   return (
     <ModalWrapper>
       <MaxWidthWrapper>
-        <ModalCard>
+        <ModalCard roundedCorners>
           <Padding all="l">{children}</Padding>
         </ModalCard>
       </MaxWidthWrapper>

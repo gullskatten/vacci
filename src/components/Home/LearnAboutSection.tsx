@@ -3,7 +3,7 @@ import { BackgroundImage } from "../../styleguide/BackgroundImage";
 import CustomBackground from "../../styleguide/CustomBackground";
 import Padding from "../../styleguide/Padding";
 import Text from "../../styleguide/Text";
-import AnimatedShortStories from "../Story/AnimatedShortStories";
+import StoryLinks from "../Story/StoryLinks";
 import unBanner from "../../assets/images/serj-transport.jpg";
 const LearnAboutSection: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const LearnAboutSection: React.FC = () => {
         </CustomBackground>
       </BackgroundImage>
       <Padding all="l">
-        <AnimatedShortStories />
+        <StoryLinks />
       </Padding>
     </CustomBackground>
   );

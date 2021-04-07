@@ -6,7 +6,7 @@ import story4 from "../../assets/images/1_sceptical_person.png";
 import Flex from "../../styleguide/Flex";
 import StoryCard from "./StoryCard";
 
-const AnimatedShortStories: React.FC = () => {
+const StoryLinks: React.FC = () => {
   return (
     <Flex fullWidth breakAt={700} wrap="wrap" align="center" justify="center">
       <StoryCard
@@ -41,4 +41,4 @@ const AnimatedShortStories: React.FC = () => {
   );
 };
 
-export default AnimatedShortStories;
+export default StoryLinks;
