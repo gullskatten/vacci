@@ -20,8 +20,8 @@ const App: React.FC = () => {
         <Route path="/" component={Home} />
       </Switch>
       <Route path="/vaccinetypes" exact component={VaccineTypes} />
-      <Route path="/home/stories/sars-cov-2" exact component={StoryCovid} />
-      <Route path="/home/stories/mrna-vaccine" exact component={StoryVaccine} />
+      <Route path="/sars-cov-2" exact component={StoryCovid} />
+      <Route path="/mrna-vaccine" exact component={StoryVaccine} />
       <Route path="/" component={Footer} />
     </>
   );
