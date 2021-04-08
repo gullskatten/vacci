@@ -6,6 +6,8 @@ interface GridProps {
   columnsMedium: string;
   columnsSmall: string;
   gap?: keyof ISpacing;
+  breakAt?: number;
+  fullWidth?: boolean;
 }
 
 const Grid = styled.div<GridProps>`
@@ -28,6 +30,19 @@ const Grid = styled.div<GridProps>`
     css`
       grid-gap: ${props.theme.spacing[props.gap]};
     `};
+
+  ${(props) =>
+    props.breakAt &&
+    css`
+      @media all and (max-width: ${props.breakAt}px) {
+        display: block;
+      }
+    `}
+  ${(props) =>
+    props.fullWidth &&
+    css`
+      width: 100%;
+    `}
 `;
 
 export default Grid;

@@ -4,13 +4,15 @@ import { IColors } from "../../styled";
 interface ListProps {
   fullWidth?: boolean;
   listStyle?: "circle" | "decimal" | "none";
+  color?: keyof IColors;
 }
 
 const List = styled.ul<ListProps>`
   margin: 0;
   padding: 0;
   list-style: ${(props) => (props.listStyle ? props.listStyle : "none")};
-
+  color: ${(props) =>
+    props.theme.colors[props.color ? props.color : "onSurface"]};
   ${(props) =>
     props.fullWidth &&
     css`
