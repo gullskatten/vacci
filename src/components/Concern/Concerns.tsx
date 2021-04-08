@@ -14,7 +14,7 @@ import CustomBackground from "../../styleguide/CustomBackground";
 
 const Concerns: React.FC = () => {
   React.useEffect(() => {
-    document.title = "Vaccine Concerns - Vacci.no";
+    document.title = "Vaccine Concerns | Vacci.no";
   }, []);
 
   return (

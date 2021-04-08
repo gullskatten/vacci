@@ -28,7 +28,7 @@ const StoryVaccine: React.FC = () => {
   const history = useHistory();
 
   React.useEffect(() => {
-    document.title = "mRNA Vaccine Explained - Vacci.no";
+    document.title = "mRNA Vaccine Explained | Vacci.no";
   }, []);
 
   const routeToHome = () => {

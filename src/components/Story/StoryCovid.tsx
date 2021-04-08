@@ -28,7 +28,7 @@ const StoryCovid: React.FC = () => {
   const history = useHistory();
 
   React.useEffect(() => {
-    document.title = "SARS-COV-2 Explained - Vacci.no";
+    document.title = "SARS-COV-2 Explained | Vacci.no";
   }, []);
 
   const routeToHome = () => {

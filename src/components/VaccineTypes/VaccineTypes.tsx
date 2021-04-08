@@ -31,7 +31,7 @@ const VaccineTypes: React.FC = () => {
   const history = useHistory();
 
   React.useEffect(() => {
-    document.title = "List Of Vaccine Types - Vacci.no";
+    document.title = "List Of Vaccine Types | Vacci.no";
   }, []);
 
   const routeToHome = () => {
