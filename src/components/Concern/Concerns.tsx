@@ -652,8 +652,7 @@ const Concerns: React.FC = () => {
                       href="https://ourworldindata.org/vaccination#vaccines-save-lives "
                       textDecoration="underline"
                     >
-                      [1]
-                      https://ourworldindata.org/vaccination#vaccines-save-lives
+                      [1] Our World In Data: Vaccines Save Lives
                     </StyledLink>
                   </Text>
                   <Text color="onSurface" variant="pico" gutterTop="m">
@@ -677,8 +676,7 @@ const Concerns: React.FC = () => {
                       href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)32656-8/fulltext"
                       textDecoration="underline"
                     >
-                      [4]
-                      https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)32656-8/fulltext
+                      [4] The Lancet article
                     </StyledLink>
                   </Text>
                 </Flex>
