@@ -9,12 +9,11 @@ import pt1f5 from "../../assets/pt1_f5_details.png";
 import CustomBackground from "../../styleguide/CustomBackground";
 import Padding from "../../styleguide/Padding";
 import Margin from "../../styleguide/Margin";
-import { List, ListItem, TinyListItem } from "../../styleguide/List";
+import { List, TinyListItem } from "../../styleguide/List";
 import StyledLink from "../../styleguide/StyledLink";
 import Grid from "../../styleguide/Grid";
 import styled from "styled-components";
 import StyledImage from "../../styleguide/StyledImage";
-import Background from "../../styleguide/Background";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavigationLink from "../../styleguide/NavigationLink";
 
