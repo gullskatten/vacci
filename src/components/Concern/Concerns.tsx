@@ -355,7 +355,7 @@ const Concerns: React.FC = () => {
         <BackgroundImage src={bgMadeTooFast} height="auto">
           <CustomBackground background="primary" alpha="0.5">
             <HideIf screenSize="m">
-              <Padding all="xl">
+              <Padding all="m">
                 <Flex
                   direction="column"
                   align="center"
