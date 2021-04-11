@@ -306,7 +306,7 @@ const StoryContentVaccine: React.FC = () => {
             </Padding>
           </CustomBackground>
           <NavigationLink
-            title="Read more about side-effects in the Statistics page"
+            title="Read more about side-effects on the Statistics page"
             href="/mrna-vaccine"
             icon={["far", "chart-bar"]}
             textColor="onPrimary"
