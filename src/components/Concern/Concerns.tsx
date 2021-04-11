@@ -362,7 +362,7 @@ const Concerns: React.FC = () => {
                   justify="center"
                   fullWidth
                 >
-                  <Text variant="title" element="h2" color="onPrimary">
+                  <Text variant="subtitle" element="h2" color="onPrimary">
                     Concern 2: Made too fast?
                   </Text>
 
@@ -479,8 +479,7 @@ const Concerns: React.FC = () => {
                       href="https://legemiddelverket.no/godkjenning/koronavaksiner/godkjenningsprosessen-for-vaksiner-mot-covid-19#dette-vet-vi-p%C3%A5-godkjenningstidspunktet- "
                       textDecoration="underline"
                     >
-                      [1]
-                      https://legemiddelverket.no/godkjenning/koronavaksiner/godkjenningsprosessen-for-vaksiner-mot-covid-19#dette-vet-vi-p%C3%A5-godkjenningstidspunktet-
+                      [1] Vaccine Approval Process
                     </StyledLink>
                   </Text>
                 </Flex>
