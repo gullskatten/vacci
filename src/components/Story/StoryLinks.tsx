@@ -11,14 +11,14 @@ const StoryLinks: React.FC = () => {
     <Flex fullWidth breakAt={700} wrap="wrap" align="center" justify="center">
       <StoryCard
         title="SARS-CoV-2"
-        href="/home/stories/sars-cov-2"
+        href="/sars-cov-2"
         src={story}
         description="The SARS-CoV-2 virus in a nutshell."
         withIcon={"arrow-right"}
       />
       <StoryCard
         title="mRNA Vaccine"
-        href="/home/stories/mrna-vaccine"
+        href="/mrna-vaccine"
         src={story2}
         description="The mRNA vaccine 101 and its effects on your body."
         withIcon={"arrow-right"}

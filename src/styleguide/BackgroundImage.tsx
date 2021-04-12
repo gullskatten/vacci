@@ -4,6 +4,7 @@ import CustomBackground from "./CustomBackground";
 interface Props {
   src: string;
   height?: string;
+  width?: string;
 }
 
 const BackgroundImage = styled.div<Props>`
@@ -11,7 +12,7 @@ const BackgroundImage = styled.div<Props>`
   background-size: cover;
   background-position: center;
   height: ${(props) => props.height || "400px"};
-  width: ${(props) => props.height || "100%"};
+  width: ${(props) => props.width || "100%"};
 `;
 
 const BackgroundImageContainer = styled.div`

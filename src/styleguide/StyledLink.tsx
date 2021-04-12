@@ -9,6 +9,7 @@ interface Props {
 }
 
 const StyledLink = styled.a<Props>`
+  word-break: break-all;
   font-style: ${(props) => (props.fontStyle ? props.fontStyle : "normal")};
   text-decoration: ${(props) =>
     props.textDecoration ? props.textDecoration : "underline"};

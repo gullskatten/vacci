@@ -6,7 +6,9 @@ interface Props {
   background?: keyof IColors;
   alpha?: string;
   fullWidth?: boolean;
+  fullHeight?: boolean;
   withShadow?: boolean;
+  clickable?: boolean;
 }
 
 const CustomBackground = styled.div<Props>`
@@ -23,7 +25,16 @@ const CustomBackground = styled.div<Props>`
     css`
       width: 100%;
     `}
-
+  ${(props) =>
+    props.fullHeight &&
+    css`
+      height: 100%;
+    `}
+  ${(props) =>
+    props.clickable &&
+    css`
+      cursor: pointer;
+    `}
   ${(props) =>
     props.withShadow &&
     css`

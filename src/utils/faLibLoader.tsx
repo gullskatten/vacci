@@ -10,6 +10,7 @@ import {
   faTruckLoading,
   faHandHoldingMedical,
   faShieldVirus,
+  faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -34,6 +35,7 @@ export default function loadIcons() {
     faVirusSlash,
     faTruckLoading,
     faHandHoldingMedical,
-    faShieldVirus
+    faShieldVirus,
+    faChevronDown
   );
 }

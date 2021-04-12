@@ -26,7 +26,7 @@ const Home: React.FC = () => {
 
     if (isHome) {
       document.body.className = "";
-      document.title = "mRNA Vaccine Information";
+      document.title = "mRNA Vaccine Information | Vacci.no";
     } else {
       document.body.className = "freeze";
     }
