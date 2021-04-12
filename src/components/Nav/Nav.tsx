@@ -77,7 +77,7 @@ const Nav: React.FC = () => {
                   <HideIf screenSize="l">
                     <Margin left="s" />
                   </HideIf>
-                  <StyledImage src={logo} height={45} />
+                  <StyledImage src={logo} height="45px" />
                   <Text
                     variant="title"
                     element="h1"

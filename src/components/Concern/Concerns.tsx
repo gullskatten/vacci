@@ -76,7 +76,7 @@ const Concerns: React.FC = () => {
             </Flex>
             <Flex basis={30}>
               <Flex align="center" justify="center" fullWidth>
-                <StyledImage src={srcScepticalPerson} height={250} />
+                <StyledImage src={srcScepticalPerson} height="250px" />
               </Flex>
             </Flex>
           </Flex>
@@ -102,7 +102,7 @@ const Concerns: React.FC = () => {
                     </Text>
                   </Flex>
                   <Flex basis={30} align="center" justify="center">
-                    <StyledImage src={srcOldPerson} height={250} />
+                    <StyledImage src={srcOldPerson} height="250px" />
                   </Flex>
                 </Flex>
               </Margin>
@@ -184,7 +184,7 @@ const Concerns: React.FC = () => {
                 </HideIf>
                 <Margin bottom="m" fullWidth>
                   <Flex align="center" justify="center" fullWidth>
-                    <StyledImage src={srcMildFeverPerson} height={250} />
+                    <StyledImage src={srcMildFeverPerson} height="250px" />
                   </Flex>
                 </Margin>
                 <Margin bottom="m" fullWidth>
@@ -684,7 +684,7 @@ const Concerns: React.FC = () => {
             </Margin>
           </Padding>
         </CustomBackground>
-        <StyledImage src={bgHoldingHands} width="100%" height={400} />
+        <StyledImage src={bgHoldingHands} width="100%" height={"400px"} />
 
         <CustomBackground background="primary" alpha="0.5" fullWidth>
           <Padding top="m" bottom="m">

@@ -210,7 +210,7 @@ const StoryContentCovid: React.FC = () => {
                     Detailed view
                   </Text>
                 </Padding>
-                <StyledImage src={pt1f5} height={400} width="100%" />
+                <StyledImage src={pt1f5} height="400px" width="100%" />
                 <Padding left="l" right="l" top="m" bottom="m">
                   <List listStyle="decimal" color="onPrimary">
                     <TinyListItem>
