@@ -684,7 +684,7 @@ const Concerns: React.FC = () => {
             </Margin>
           </Padding>
         </CustomBackground>
-        <StyledImage src={bgHoldingHands} width="100%" height={400} />
+        <StyledImage src={bgHoldingHands} width="100%" height={"400px"} />
 
         <CustomBackground background="primary" alpha="0.5" fullWidth>
           <Padding top="m" bottom="m">
