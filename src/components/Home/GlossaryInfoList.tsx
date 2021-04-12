@@ -58,8 +58,8 @@ const GlossaryInfoList: React.FC = () => {
           >
             Proteins:
           </Text>
-          Building blocks of all organisms. We can think of proteins as the dish
-          that is specified by our DNA, the cookbook.
+          Building blocks of all organisms. We can think of proteins as the
+          dishes that are specified by our DNA, the cookbook.
         </Text>
       </ListItem>
     </List>

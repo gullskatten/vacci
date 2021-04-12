@@ -113,44 +113,6 @@ const VaccineTypes: React.FC = () => {
                   </Text>
                 </TinyListItem>
               </List>
-
-              <List>
-                <TinyListItem>
-                  <Text variant="pico" element="p" color="onSurface" bold>
-                    Inspired by:
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onSurface" variant="pico">
-                    <StyledLink
-                      href="https://www.nature.com/articles/d41586-020-01221-y"
-                      textDecoration="underline"
-                    >
-                      https://www.nature.com/articles/d41586-020-01221-y
-                    </StyledLink>
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onSurface" variant="pico">
-                    <StyledLink
-                      href="https://www.immunology.org/coronavirus/connect-coronavirus-public-engagement-resources/types-vaccines-for-covid-19"
-                      textDecoration="underline"
-                    >
-                      Immunology.org: Vaccine types for Covid-19
-                    </StyledLink>
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onSurface" variant="pico">
-                    <StyledLink
-                      href="https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_20Jan2021_v2.pdf"
-                      textDecoration="underline"
-                    >
-                      COVID-Vaccine Status 20th January 2021
-                    </StyledLink>
-                  </Text>
-                </TinyListItem>
-              </List>
             </Padding>
           </Modal>
         </Margin>

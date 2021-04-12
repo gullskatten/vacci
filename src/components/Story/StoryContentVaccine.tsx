@@ -53,44 +53,6 @@ const StoryContentVaccine: React.FC = () => {
           </Text>
         </Padding>
       </CustomBackground>
-
-      <CustomBackground background="primary" alpha="0.1" fullWidth>
-        <Padding all="m">
-          <List>
-            <TinyListItem>
-              <Text variant="pico" element="p" color="onSurface" bold>
-                Sources:
-              </Text>
-            </TinyListItem>
-            <TinyListItem>
-              <Text color="onSurface" variant="pico">
-                <StyledLink
-                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7778607/"
-                  textDecoration="underline"
-                >
-                  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7778607/
-                </StyledLink>
-              </Text>
-            </TinyListItem>
-            <TinyListItem>
-              <Text color="onSurface" variant="pico">
-                <StyledLink
-                  href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines"
-                  textDecoration="underline"
-                >
-                  WHO: Draft Landscape of COVID-19 Candidate Vaccines
-                </StyledLink>
-              </Text>
-            </TinyListItem>
-            <TinyListItem>
-              <Text color="onSurface" variant="pico">
-                Disclaimer: The described process is exemplified by the
-                description of the vaccine from Moderna.
-              </Text>
-            </TinyListItem>
-          </List>
-        </Padding>
-      </CustomBackground>
       <Margin top="m">
         <Flex direction="column" fullWidth>
           <BackgroundImage src={pt2f2} height="400px" width="100%" />
@@ -118,27 +80,6 @@ const StoryContentVaccine: React.FC = () => {
               </Text>
             </Padding>
           </CustomBackground>
-          <CustomBackground background="primary" alpha="0.5" fullWidth>
-            <Padding all="m">
-              <List>
-                <TinyListItem>
-                  <Text variant="pico" element="p" color="onPrimary" bold>
-                    Source:
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onPrimary" variant="pico">
-                    <StyledLink
-                      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7218962/"
-                      textDecoration="underline"
-                    >
-                      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7218962/
-                    </StyledLink>
-                  </Text>
-                </TinyListItem>
-              </List>
-            </Padding>
-          </CustomBackground>
         </Flex>
       </Margin>
 
@@ -154,10 +95,10 @@ const StoryContentVaccine: React.FC = () => {
           </StickyTitle>
           <CustomBackground background="error" alpha="0.7" fullWidth>
             <Padding all="m" fullWidth>
-              <Text color="onPrimary" textAlign="center">
+              <Text color="onPrimary">
                 We are injected into your upper arm and enter your cells.
               </Text>
-              <Text color="onPrimary" gutterTop="s" textAlign="center">
+              <Text color="onPrimary" gutterTop="s">
                 Once we have delivered the recipe to a cell, our job is done.
                 The rest is up to your cells.
               </Text>
@@ -181,11 +122,11 @@ const StoryContentVaccine: React.FC = () => {
           </StickyTitle>
           <CustomBackground background="primary" alpha="0.6" fullWidth>
             <Padding all="m" fullWidth>
-              <Text color="onPrimary" gutterTop="s" textAlign="center">
+              <Text color="onPrimary" gutterTop="s">
                 The information in the recipe is used to make the crown from the
                 Coronavirus. This part isn't infectious in itself.
               </Text>
-              <Text color="onPrimary" gutterTop="s" textAlign="center">
+              <Text color="onPrimary" gutterTop="s">
                 The crown is broken down to smaller pieces and released from the
                 cell.
               </Text>
@@ -206,12 +147,12 @@ const StoryContentVaccine: React.FC = () => {
           </StickyTitle>
           <CustomBackground background="primary" alpha="0.6" fullWidth>
             <Padding all="m" fullWidth>
-              <Text color="onPrimary" textAlign="center">
+              <Text color="onPrimary">
                 The small pieces of the crown are captured by special cells
                 called antigen-presenting cells. These cells attach the pieces
                 of the crown to their surface.
               </Text>
-              <Text color="onPrimary" gutterTop="s" textAlign="center">
+              <Text color="onPrimary" gutterTop="s">
                 The antigen-presenting cells meet other agents of the immune
                 system (more about them later) and show them the small crown
                 pieces. This starts an important process in the immune system.
@@ -233,7 +174,7 @@ const StoryContentVaccine: React.FC = () => {
           </StickyTitle>
           <CustomBackground background="primary" alpha="0.5" fullWidth>
             <Padding all="m" fullWidth>
-              <Text color="onPrimary" textAlign="center">
+              <Text color="onPrimary">
                 The presented crowns can activate B and T cells, which are part
                 of our natural immune system. B cells produce virus fighters
                 (antibodies) which can bind to and inactivate virus particles.
@@ -243,7 +184,7 @@ const StoryContentVaccine: React.FC = () => {
           </CustomBackground>
           <CustomBackground background="primary" alpha="0.6" fullWidth>
             <Padding all="m" fullWidth>
-              <Text color="onPrimary" textAlign="center">
+              <Text color="onPrimary">
                 The goal of all vaccines is to save some of the activated immune
                 cells as memory cells. These cells may remember what the crown
                 looked like and will be ready to attack the Coronavirus or any
@@ -253,33 +194,12 @@ const StoryContentVaccine: React.FC = () => {
           </CustomBackground>
           <CustomBackground background="primary" alpha="0.7" fullWidth>
             <Padding all="m" fullWidth>
-              <Text color="onPrimary" textAlign="center">
+              <Text color="onPrimary">
                 This means that the next time the cells in your body, instead of
                 the body having to try out several different ways to fight it,
                 they already know how to fight it. As a result, it may stop the
                 virus from spreading before it gets a hold of your body.
               </Text>
-            </Padding>
-          </CustomBackground>
-          <CustomBackground background="primary" alpha="0.8" fullWidth>
-            <Padding all="m">
-              <List>
-                <TinyListItem>
-                  <Text variant="pico" element="p" color="onPrimary" bold>
-                    Source:
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onPrimary" variant="pico">
-                    <StyledLink
-                      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7218962/"
-                      textDecoration="underline"
-                    >
-                      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7218962/
-                    </StyledLink>
-                  </Text>
-                </TinyListItem>
-              </List>
             </Padding>
           </CustomBackground>
         </Flex>
@@ -297,7 +217,7 @@ const StoryContentVaccine: React.FC = () => {
           </StickyTitle>
           <CustomBackground background="primary" alpha="0.5" fullWidth>
             <Padding all="m" fullWidth>
-              <Text color="onPrimary" textAlign="center">
+              <Text color="onPrimary">
                 I'm sorry to say that I might cause some side-effects. It is
                 common to experience some pain, swelling and redness where you
                 got the injection. Other side-effects include fatigue,
@@ -346,7 +266,7 @@ const StoryContentVaccine: React.FC = () => {
               <List>
                 <TinyListItem>
                   <Text variant="pico" element="p" color="onPrimary" bold>
-                    Source:
+                    Sources:
                   </Text>
                 </TinyListItem>
                 <TinyListItem>
@@ -356,6 +276,36 @@ const StoryContentVaccine: React.FC = () => {
                       textDecoration="underline"
                     >
                       https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7236739/
+                    </StyledLink>
+                  </Text>
+                </TinyListItem>
+                <TinyListItem>
+                  <Text color="onPrimary" variant="pico">
+                    <StyledLink
+                      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7218962/"
+                      textDecoration="underline"
+                    >
+                      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7218962/
+                    </StyledLink>
+                  </Text>
+                </TinyListItem>
+                <TinyListItem>
+                  <Text color="onPrimary" variant="pico">
+                    <StyledLink
+                      href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7778607/"
+                      textDecoration="underline"
+                    >
+                      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7778607/
+                    </StyledLink>
+                  </Text>
+                </TinyListItem>
+                <TinyListItem>
+                  <Text color="onPrimary" variant="pico">
+                    <StyledLink
+                      href="https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines"
+                      textDecoration="underline"
+                    >
+                      WHO: Draft Landscape of COVID-19 Candidate Vaccines
                     </StyledLink>
                   </Text>
                 </TinyListItem>

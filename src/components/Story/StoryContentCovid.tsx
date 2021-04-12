@@ -83,36 +83,14 @@ const StoryContentCovid: React.FC = () => {
               color="onPrimary"
               textAlign="center"
             >
-              Hi! My name is Espen. I'm completely fine, but I have had a bit of
-              a sour throat, but I always feel this way in the autumn. As my
-              friend tested positive for COVID-19 in the weekend, I was adviced
-              to get tested. Now I have to stay in isolation for 10 days as my
-              test was positive as well…
+              Hi! My name is Espen. I have a bit of a sore throat, but I always
+              feel this way in the autumn. As my friend tested positive for
+              COVID-19 in the weekend, I was adviced to get tested. Now I have
+              to stay in isolation for 10 days as my test was positive as well…
             </Text>
           </Padding>
         </CustomBackground>
       </Grid>
-      <CustomBackground background="primary" alpha="0.1" fullWidth>
-        <Padding all="m">
-          <List>
-            <TinyListItem>
-              <Text variant="pico" element="p" color="onSurface" bold>
-                Source:
-              </Text>
-            </TinyListItem>
-            <TinyListItem>
-              <Text color="onSurface" variant="pico">
-                <StyledLink
-                  href="https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30233-7"
-                  textDecoration="underline"
-                >
-                  https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30233-7
-                </StyledLink>
-              </Text>
-            </TinyListItem>
-          </List>
-        </Padding>
-      </CustomBackground>
       <Margin top="m">
         <Flex direction="column" fullWidth>
           <BackgroundImage src={pt1f2} height="400px" width="100%" />
@@ -125,12 +103,7 @@ const StoryContentCovid: React.FC = () => {
           </StickyTitle>
           <CustomBackground background="error" alpha="0.7" fullWidth>
             <Padding all="m">
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                textAlign="center"
-              >
+              <Text variant="body" element="p" color="onPrimary">
                 Hi, my name is{" "}
                 <Text element="span" bold color="onPrimary">
                   SARS-CoV-2
@@ -140,13 +113,7 @@ const StoryContentCovid: React.FC = () => {
                   the Coronavirus.
                 </Text>
               </Text>
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                gutterTop="s"
-                textAlign="center"
-              >
+              <Text variant="body" element="p" color="onPrimary" gutterTop="s">
                 I'm the one making Bob and Espen sick. I cause a severe
                 respiratory illness called COVID-19. You may recognize me based
                 on my characteristic spikes. Some think that the spikes resemble
@@ -156,43 +123,6 @@ const StoryContentCovid: React.FC = () => {
                 why I infect humans. I like to use their complex cells to
                 reproduce myself.
               </Text>
-            </Padding>
-          </CustomBackground>
-          <CustomBackground background="error" alpha="0.5" fullWidth>
-            <Padding all="m">
-              <List>
-                <TinyListItem>
-                  <Text variant="pico" element="p" color="onPrimary" bold>
-                    Sources:
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onPrimary" variant="pico">
-                    <StyledLink
-                      href="https://www.sciencedirect.com/science/article/pii/S1684118220300827?via%3Dihub"
-                      textDecoration="underline"
-                    >
-                      Genotype and phenotype of COVID-19: Their roles in
-                      pathogenesis
-                    </StyledLink>
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onPrimary" variant="pico">
-                    <StyledLink
-                      href="https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30233-7"
-                      textDecoration="underline"
-                    >
-                      https://www.cell.com/trends/immunology/fulltext/S1471-4906(20)30233-7
-                    </StyledLink>
-                  </Text>
-                </TinyListItem>
-                <TinyListItem>
-                  <Text color="onPrimary" variant="pico" bold>
-                    SARS-CoV-2 is the virus, Covid-19 is the disease.
-                  </Text>
-                </TinyListItem>
-              </List>
             </Padding>
           </CustomBackground>
         </Flex>
@@ -210,34 +140,17 @@ const StoryContentCovid: React.FC = () => {
           </StickyTitle>
           <CustomBackground background="error" alpha="0.7" fullWidth>
             <Padding all="m" fullWidth>
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                textAlign="center"
-              >
+              <Text variant="body" element="p" color="onPrimary">
                 On the surface of the cells, they have some special parts called
                 receptors.
               </Text>
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                gutterTop="s"
-                textAlign="center"
-              >
+              <Text variant="body" element="p" color="onPrimary" gutterTop="s">
                 These are normally used for other functions in healthy cells,{" "}
                 <Text element="span" bold color="onPrimary">
                   but I don't care!
                 </Text>
               </Text>
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                gutterTop="s"
-                textAlign="center"
-              >
+              <Text variant="body" element="p" color="onPrimary" gutterTop="s">
                 Thanks to my beautiful crown, I'm able to attach to them and
                 enter the cells.
               </Text>
@@ -253,34 +166,15 @@ const StoryContentCovid: React.FC = () => {
 
           <CustomBackground background="error" alpha="0.6" fullWidth>
             <Padding all="m" fullWidth>
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                textAlign="center"
-              >
+              <Text variant="body" element="p" color="onPrimary">
                 When I get into the cells, I want to make copies of myself.
               </Text>
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                gutterTop="s"
-                textAlign="center"
-              >
+              <Text variant="body" element="p" color="onPrimary" gutterTop="s">
                 I hijack the cell and trick it into making copies of my building
                 parts as well as{" "}
                 <Text element="span" bold color="onPrimary">
                   copies of the recipes for my building parts.
-                </Text>
-              </Text>
-              <Text
-                variant="body"
-                element="p"
-                color="onPrimary"
-                gutterTop="s"
-                textAlign="center"
-              >
+                </Text>{" "}
                 In this way, I am able to generate many new viruses which are
                 put together inside the cell before they are released. These new
                 virus particles are free to infect other cells.
