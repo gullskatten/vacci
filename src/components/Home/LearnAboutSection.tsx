@@ -8,7 +8,7 @@ import unBanner from "../../assets/images/serj-transport.jpg";
 const LearnAboutSection: React.FC = () => {
   return (
     <CustomBackground background="surface" alpha="0.6">
-      <BackgroundImage src={unBanner} height="auto">
+      <BackgroundImage src={unBanner} height="auto" alt="People wearing masks banner">
         <CustomBackground background="primary" alpha="0.5">
           <Padding all="m">
             <Text variant="title" element="h2" color="onPrimary">
