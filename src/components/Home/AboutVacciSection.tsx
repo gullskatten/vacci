@@ -31,7 +31,7 @@ const AboutVacciSection: React.FC = () => {
             </Text>
 
             <Text
-              color="onBackgroundContrast"
+              color="onBackground"
               gutterLeft="s"
               variant="pico"
               element="span"
