@@ -34,7 +34,7 @@ const Home: React.FC = () => {
 
   return (
     <MainMatter>
-      <BackgroundImage src={aboutImage}>
+      <BackgroundImage src={aboutImage} alt="Picture of SARS-CoV-2 virus">
         <Flex align="center" justify="center" fullWidth fullHeight>
           <BackgroundImageContainer>
             <CustomBackground alpha="0.85" background="surface">
