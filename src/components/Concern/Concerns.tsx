@@ -116,29 +116,12 @@ const Concerns: React.FC = () => {
             </Text>
             <Flex breakAt={500}>
               <Flex direction="column" basis={70}>
+               
                 <Text color="onSurface" gutterTop="m">
-                  In a report from legemiddelverket (updated march 2nd), they
-                  found that while there have been 510 000 administered vaccine
-                  shots in Norway, there were only 3636 reports of suspected
-                  side effects{" "}
-                  <Text color="onSurface" element="span" bold>
+                  Studies have found that most people who are vaccinated in Norway get mild side effects like soreness where the vaccine was taken, headaches and tiredness
+                   <Text color="onSurface" element="span" bold>
                     [1]
-                  </Text>
-                  .
-                </Text>
-
-                <Text color="onSurface" gutterTop="m">
-                  This is however not necessarily an accurate representations of
-                  the number of people who get side effects, as it is not likely
-                  that everyone who experienced side effects reported them.
-                  Also, it is not certain whether the symptoms reported is
-                  linked to the vaccine.
-                </Text>
-
-                <Text color="onSurface" gutterTop="m">
-                  Other studies have found that just over 50 % of people who are
-                  vaccinated in Norway get mild side effects like soreness where
-                  the vaccine was taken, headaches and tiredness. Many also
+                  </Text>. Many also
                   report experiencing muscle achings and chills. A bit less than
                   5 % experience more severe local and systemic side effects,
                   which affected their daily life (for the few days they
@@ -147,15 +130,13 @@ const Concerns: React.FC = () => {
                 <Text color="onSurface" gutterTop="m">
                   A very small number of people, 2-11 cases out of a million
                   administrations to be exact, experience severe allergic
-                  reactions to corona vaccines. In "normal" vaccine this
+                  reactions to corona vaccines{" "}<Text color="onSurface" element="span" bold>
+                    [2]
+                  </Text>. In "normal" vaccine this
                   prevalence is lower, at about 0,8 out of every one million
                   administrations. Because of this, every institutions that is
                   allowed to administer vaccines, needs to have functioning
-                  protocols for dealing with possible allergic reactions{" "}
-                  <Text color="onSurface" element="span" bold>
-                    [2]
-                  </Text>
-                  .
+                  protocols for dealing with possible allergic reactions.
                 </Text>
 
                 <Text color="onSurface" gutterTop="m" bold>
@@ -434,8 +415,7 @@ const Concerns: React.FC = () => {
                     the vaccine are concider to outweigh the risk of illness and
                     death from the disease. This risks and benefits needs to be
                     well documented, and there are strict criteria for what
-                    documentation is needed. The until now approved vaccines
-                    (BioNtech/Pfizer, Moderna and Astra-Zenica) have all been
+                    documentation is needed. BioNtech/Pfizer and Moderna have been
                     evaluated to meet this criteria.
                     <Text color="onSurface" element="span" bold>
                       {" "}
@@ -519,7 +499,7 @@ const Concerns: React.FC = () => {
                     effects and risk, most side effects would likely have been
                     caught by now. Also, no previous vaccines has been seen to
                     trigger side effects with an onset longer than 6 months
-                    after injection (reference needed).
+                    after injection.
                   </Text>
 
                   <Text color="onSurface" gutterTop="m">
