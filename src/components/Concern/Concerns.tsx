@@ -171,10 +171,10 @@ const Concerns: React.FC = () => {
                 </Text>
                 <Text color="onSurface" variant="pico" gutterTop="m">
                   <StyledLink
-                    href=" https://www.dagensmedisin.no/artikler/2021/02/18/flere-far-anafylaksi-med-koronavaksine--kan-skyldes-fyllstoff/"
+                    href="https://tidsskriftet.no/2021/02/debatt/covid-19-vaksiner-gir-okt-risiko-anafylaksi?fbclid=IwAR1uZwYCar4hSi68mIsJ2a7k7k10AupxRify0Z2CVkXrj8gd9nA00QA9vnQ"
                     textDecoration="underline"
                   >
-                    [2] Dagens Medisin
+                    [2] Tidsskriftet.no: COVID-19 Vaksiner gir økt risiko for anafylaksi
                   </StyledLink>
                 </Text>
               </Flex>
@@ -195,7 +195,7 @@ const Concerns: React.FC = () => {
                     direction="column"
                   >
                     <Text variant="title" color="primary" element="h3">
-                      50%
+                      {">50%"}
                     </Text>
                     <Text color="onSurface" gutterTop="s">
                       Experience mild symptoms
